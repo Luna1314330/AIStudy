@@ -1,0 +1,48 @@
+.voice-btn {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.voice-btn:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.voice-btn--active {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+.voice-btn--unsupported {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.voice-btn__icon {
+  font-size: 20px;
+  line-height: 1;
+  z-index: 1;
+}
+
+.voice-btn__pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid #fca5a5;
+  animation: pulse 1.5s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 1; }
+  100% { transform: scale(1.3); opacity: 0; }
+}

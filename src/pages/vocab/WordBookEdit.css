@@ -1,0 +1,159 @@
+.word-book-edit {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
+
+.word-book-edit__header {
+  margin-bottom: 24px;
+}
+
+.word-book-edit__header a {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.word-book-edit__header h2 {
+  font-size: 22px;
+}
+
+.word-book-edit__hint {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.word-book-edit__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.word-book-edit__field span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.word-book-edit__field input,
+.word-book-edit__field textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.word-book-edit__field input:read-only {
+  background: #f8fafc;
+  color: var(--color-text-secondary);
+}
+
+.word-book-edit__field em {
+  font-style: normal;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.word-book-edit__generate {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--color-primary);
+  background: #fff;
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.word-book-edit__table-wrap {
+  margin-bottom: 24px;
+}
+
+.word-book-edit__table-wrap h3 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.word-book-edit__table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.word-book-edit__table-head,
+.word-book-edit__table-row {
+  display: grid;
+  grid-template-columns: 72px 1fr 1.4fr 32px;
+  gap: 8px;
+  align-items: center;
+}
+
+.word-book-edit__table-head {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  padding: 0 4px;
+}
+
+.word-book-edit__table-row input {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.word-book-edit__remove {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.word-book-edit__save {
+  flex: 1;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.word-book-edit__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.word-book-edit__reset {
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .word-book-edit__table-head,
+  .word-book-edit__table-row {
+    grid-template-columns: 64px 1fr 1fr 28px;
+    gap: 6px;
+  }
+
+  .word-book-edit__table-row input {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}

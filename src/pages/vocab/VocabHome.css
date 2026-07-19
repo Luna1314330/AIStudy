@@ -1,0 +1,296 @@
+.vocab-home {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
+
+.vocab-home__hero {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.vocab-home__emoji {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.vocab-home__hero h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.vocab-home__hero p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.vocab-home__warn {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.vocab-panel {
+  margin-bottom: 20px;
+  padding: 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.vocab-panel h3 {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.vocab-panel--compact {
+  padding: 12px 16px;
+}
+
+.vocab-mode-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.vocab-mode-row h3 {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.vocab-mode-segment {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.vocab-mode-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.vocab-mode-option__icon {
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.vocab-mode-option--active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.vocab-mode-option:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.vocab-mode-option__count {
+  min-width: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.vocab-mode-option--active .vocab-mode-option__count {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.vocab-mode-option:not(.vocab-mode-option--active) .vocab-mode-option__count {
+  background: #eef2ff;
+  color: var(--color-primary);
+}
+
+.vocab-section-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.vocab-book-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vocab-book-picker__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.vocab-book-picker__row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.vocab-book-select {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 36px 11px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center;
+  appearance: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.vocab-book-picker__summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.vocab-book-picker__summary strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.vocab-book-picker__summary span {
+  color: var(--color-text-secondary);
+}
+
+.vocab-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vocab-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.vocab-setting-row > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.vocab-setting-options {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.vocab-chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vocab-chip--active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.vocab-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.vocab-toggle input {
+  width: 18px;
+  height: 18px;
+}
+
+.vocab-start-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.vocab-start-btn:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+}
+
+.vocab-start-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .vocab-home {
+    padding: 16px;
+  }
+
+  .vocab-mode-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vocab-mode-segment {
+    justify-content: stretch;
+  }
+
+  .vocab-mode-option {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .vocab-setting-row {
+    flex-wrap: wrap;
+  }
+
+  .vocab-setting-options {
+    flex: 1;
+    min-width: 0;
+    justify-content: flex-end;
+  }
+
+  .vocab-chip {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}

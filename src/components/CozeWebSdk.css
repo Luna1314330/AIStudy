@@ -1,0 +1,10 @@
+.coze-web-sdk-container {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  background: var(--color-surface);
+}
+
+.coze-web-sdk-container iframe {
+  border: none;
+}

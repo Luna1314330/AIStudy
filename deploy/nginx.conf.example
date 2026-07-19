@@ -1,0 +1,25 @@
+# 可选：在 Node 服务前加 Nginx 做 HTTPS 与域名
+# 假设 Node 服务运行在 127.0.0.1:3000
+
+server {
+    listen 80;
+    server_name your-domain.com;
+
+    # 若已配置 SSL，可改为 listen 443 ssl; 并填写证书路径
+
+    client_max_body_size 10m;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        # 写作 / 阅读流式对话需要关闭缓冲
+        proxy_buffering off;
+        proxy_cache off;
+        proxy_read_timeout 300s;
+    }
+}

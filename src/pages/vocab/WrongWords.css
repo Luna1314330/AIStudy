@@ -1,0 +1,137 @@
+.wrong-words {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
+
+.wrong-words__header {
+  margin-bottom: 20px;
+}
+
+.wrong-words__header h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.wrong-words__header p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.wrong-words__empty {
+  text-align: center;
+  padding: 48px 20px;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+}
+
+.wrong-words__empty span {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.wrong-words__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.wrong-words__review-btn {
+  flex: 1;
+  min-width: 200px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.wrong-words__clear-btn {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #fecaca;
+  background: #fff;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.wrong-words__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wrong-words__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.wrong-words__main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+
+.wrong-words__main strong {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.wrong-words__pinyin {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.2;
+}
+
+.wrong-words__meta {
+  font-style: normal;
+  font-size: 11px;
+  color: #b45309;
+  line-height: 1.2;
+}
+
+.wrong-words__meta::before {
+  content: '·';
+  margin-right: 8px;
+  color: var(--color-border);
+}
+
+.wrong-words__remove {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: #f8fafc;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 480px) {
+  .wrong-words__main strong {
+    font-size: 18px;
+  }
+
+  .wrong-words__meta {
+    flex-basis: 100%;
+    padding-left: 0;
+  }
+
+  .wrong-words__meta::before {
+    display: none;
+  }
+}

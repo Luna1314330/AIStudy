@@ -1,0 +1,24 @@
+{
+  "name": "learning-assistant-react",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node deploy/server.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "pinyin-pro": "^3.28.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7"
+  }
+}
