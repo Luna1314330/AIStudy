@@ -1,12 +1,5 @@
-import SubjectPlaceholder from './SubjectPlaceholder'
-import './Placeholder.css'
+import { Outlet } from 'react-router-dom'
 
 export default function Math() {
-  return (
-    <SubjectPlaceholder
-      icon="🔢"
-      title="数学"
-      description="数学模块即将上线，将包含口算练习、应用题辅导等功能。"
-    />
-  )
+  return <Outlet />
 }

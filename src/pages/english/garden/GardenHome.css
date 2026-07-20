@@ -1,0 +1,629 @@
+.garden-home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 20px 24px 28px;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(134, 239, 172, 0.35), transparent 42%),
+    radial-gradient(circle at 90% 100%, rgba(110, 231, 183, 0.25), transparent 38%),
+    linear-gradient(180deg, #ecfdf5 0%, #f0fdf4 100%);
+}
+
+.garden-home__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+  margin-bottom: 18px;
+}
+
+.garden-home__back {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.garden-home__intro {
+  flex: 1;
+  min-width: 0;
+}
+
+.garden-home__title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.garden-home__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f766e;
+}
+
+.garden-home__desc {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.garden-home__in-progress-link {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(251, 191, 36, 0.22);
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  color: #b45309;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.garden-home__in-progress-link:hover {
+  background: rgba(251, 191, 36, 0.32);
+}
+
+.garden-home__stats {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(20, 184, 166, 0.22);
+}
+
+.garden-home__stats-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.garden-home__stats-col--stars {
+  align-items: center;
+  justify-content: center;
+  padding-left: 14px;
+  border-left: 1px solid rgba(20, 184, 166, 0.18);
+}
+
+.garden-home__stats-label {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.garden-home__stats strong {
+  font-size: 18px;
+  color: #0f766e;
+}
+
+.garden-home__stats-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.garden-home__stats-star-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.garden-home__stats-star-count {
+  font-size: 16px;
+  font-weight: 800;
+  color: #b45309;
+  line-height: 1;
+}
+
+.garden-home__reset {
+  margin-left: 4px;
+  padding: 6px 10px;
+  border: 1px solid rgba(239, 68, 68, 0.28);
+  border-radius: 8px;
+  background: rgba(254, 242, 242, 0.95);
+  color: #b91c1c;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.garden-home__reset:hover {
+  background: rgba(254, 226, 226, 0.98);
+}
+
+.garden-gacha {
+  flex-shrink: 0;
+  margin-bottom: 18px;
+}
+
+.garden-gacha__card {
+  width: 100%;
+  min-width: 440px;
+  padding: 14px 20px;
+  border-radius: 18px;
+  background: linear-gradient(160deg, #1e293b, #0f172a);
+  color: #fef3c7;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.25);
+}
+
+.garden-gacha__card--drawing .garden-gacha__card-placeholder {
+  animation: garden-card-shake 0.45s ease-in-out infinite alternate;
+}
+
+.garden-gacha__card-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.garden-gacha__col--cover {
+  flex-shrink: 0;
+}
+
+.garden-gacha__col--info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  text-align: left;
+}
+
+.garden-gacha__col--action {
+  flex-shrink: 0;
+  width: min(240px, 32%);
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  text-align: right;
+}
+
+.garden-gacha__card-action-hint {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(254, 243, 199, 0.82);
+}
+
+.garden-gacha__card-placeholder {
+  width: 96px;
+  height: 112px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #334155, #1e293b);
+  border: 2px solid rgba(251, 191, 36, 0.45);
+  font-size: 40px;
+  font-weight: 800;
+  color: #fbbf24;
+}
+
+.garden-gacha__card-cover {
+  width: 96px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(251, 191, 36, 0.55);
+  display: block;
+}
+
+.garden-gacha__card-tag,
+.garden-gacha__card-series {
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.garden-gacha__card-tag {
+  letter-spacing: 0.04em;
+  color: #fbbf24;
+}
+
+.garden-gacha__card-series {
+  color: #fde68a;
+}
+
+.garden-gacha__card-title {
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 800;
+  color: #fff7ed;
+}
+
+.garden-gacha__card-title-cn {
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgba(254, 243, 199, 0.92);
+}
+
+.garden-gacha__card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.garden-gacha__go {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #fbbf24;
+  color: #78350f;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.garden-gacha__go--link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.garden-gacha__btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.28);
+}
+
+.garden-gacha__btn--inline {
+  margin-top: 0;
+}
+
+.garden-gacha__btn--link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.garden-gacha__btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.garden-library {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.garden-series {
+  padding: 16px 18px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(20, 184, 166, 0.14);
+}
+
+.garden-series__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.garden-series__head h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  color: #134e4a;
+}
+
+.garden-series__head p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.garden-series__head span {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(20, 184, 166, 0.12);
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.garden-batch + .garden-batch {
+  margin-top: 16px;
+}
+
+.garden-batch__title {
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(15, 118, 110, 0.08);
+  font-size: 12px;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.garden-batch__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.garden-book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 146px;
+  padding: 10px 10px 12px;
+  border: 5px solid #cbd5e1;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.garden-book-card:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.garden-book-card--locked {
+  border-color: #94a3b8;
+  opacity: 0.78;
+  cursor: not-allowed;
+}
+
+.garden-book-card--locked:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.garden-book-card--active {
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+}
+
+.garden-book-card--done {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.18);
+}
+
+.garden-book-card__cover-wrap {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.garden-book-card__cover {
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  background: #f1f5f9;
+}
+
+.garden-book-card__title {
+  display: block;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #134e4a;
+  word-break: break-word;
+}
+
+.garden-book-card__title-cn {
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--color-text-secondary);
+  word-break: break-word;
+}
+
+.garden-book-card__status {
+  margin-top: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.garden-book-card--locked .garden-book-card__status {
+  background: rgba(148, 163, 184, 0.2);
+  color: #64748b;
+}
+
+.garden-book-card--active .garden-book-card__status {
+  background: rgba(251, 191, 36, 0.22);
+  color: #b45309;
+}
+
+.garden-book-card--done .garden-book-card__status {
+  background: rgba(59, 130, 246, 0.15);
+  color: #1d4ed8;
+}
+
+.garden-book-card__enter {
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #b45309;
+}
+
+.garden-book-card--done .garden-book-card__enter {
+  color: #1d4ed8;
+}
+
+.garden-active {
+  padding: 16px 18px 18px;
+  border-radius: 16px;
+  background: rgba(255, 251, 235, 0.92);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+.garden-active__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.garden-active__title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  color: #92400e;
+}
+
+.garden-active__desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #78716c;
+}
+
+.garden-active__count {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(251, 191, 36, 0.22);
+  color: #b45309;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.garden-active__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.garden-active--page {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.garden-in-progress__empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 48px 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px dashed rgba(20, 184, 166, 0.28);
+  text-align: center;
+}
+
+.garden-in-progress__empty span[aria-hidden='true'] {
+  font-size: 40px;
+}
+
+.garden-in-progress__empty p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.garden-in-progress__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.garden-in-progress__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.garden-in-progress__series {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #92400e;
+}
+
+@keyframes garden-card-shake {
+  from {
+    transform: rotate(-2deg) scale(0.98);
+  }
+  to {
+    transform: rotate(2deg) scale(1.02);
+  }
+}
+
+@media (max-width: 768px) {
+  .garden-home {
+    padding: 16px;
+  }
+
+  .garden-home__header {
+    flex-direction: column;
+  }
+
+  .garden-gacha {
+    margin-bottom: 14px;
+  }
+
+  .garden-gacha__card {
+    min-width: 0;
+  }
+
+  .garden-gacha__card-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .garden-gacha__col--action {
+    width: 100%;
+    margin-left: 0;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .garden-gacha__card-actions {
+    align-items: stretch;
+  }
+
+  .garden-gacha__go,
+  .garden-gacha__btn {
+    width: 100%;
+  }
+
+  .garden-book-card {
+    width: 128px;
+  }
+
+  .garden-book-card__cover {
+    height: 148px;
+  }
+}

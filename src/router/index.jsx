@@ -11,7 +11,25 @@ import WrongWords from '@/pages/vocab/WrongWords'
 import WordBooks from '@/pages/vocab/WordBooks'
 import WordBookEdit from '@/pages/vocab/WordBookEdit'
 import MathPage from '@/pages/Math'
+import MathHome from '@/pages/math/MathHome'
+import MathWrongBook from '@/pages/math/MathWrongBook'
+import MathProjectPlaceholder from '@/pages/math/MathProjectPlaceholder'
+import MixedHome from '@/pages/math/mixed/MixedHome'
+import MixedPlay from '@/pages/math/mixed/MixedPlay'
+import SpeedArenaHome from '@/pages/math/speed/SpeedArenaHome'
+import SpeedBlitz60 from '@/pages/math/speed/SpeedBlitz60'
+import SpeedDefend from '@/pages/math/speed/SpeedDefend'
+import TwentyFourHome from '@/pages/math/twentyfour/TwentyFourHome'
+import TwentyFourPlay from '@/pages/math/twentyfour/TwentyFourPlay'
+import SudokuHome from '@/pages/math/sudoku/SudokuHome'
+import SudokuPlay from '@/pages/math/sudoku/SudokuPlay'
+import SpatialHome from '@/pages/math/spatial/SpatialHome'
+import SpatialPlay from '@/pages/math/spatial/SpatialPlay'
 import English from '@/pages/English'
+import EnglishHome from '@/pages/english/EnglishHome'
+import GardenHome from '@/pages/english/garden/GardenHome'
+import GardenInProgress from '@/pages/english/garden/GardenInProgress'
+import GardenShrine from '@/pages/english/garden/GardenShrine'
 import Science from '@/pages/Science'
 
 export const SUBJECT_NAV = [
@@ -54,8 +72,37 @@ export const routes = [
           },
         ],
       },
-      { path: 'math', element: <MathPage /> },
-      { path: 'english', element: <English /> },
+      {
+        path: 'math',
+        element: <MathPage />,
+        children: [
+          { index: true, element: <MathHome /> },
+          { path: 'speed', element: <SpeedArenaHome /> },
+          { path: 'speed/blitz', element: <SpeedBlitz60 /> },
+          { path: 'speed/defend', element: <SpeedDefend /> },
+          { path: 'sudoku', element: <SudokuHome /> },
+          { path: 'sudoku/play', element: <SudokuPlay /> },
+          { path: 'twentyfour', element: <TwentyFourHome /> },
+          { path: 'twentyfour/play', element: <TwentyFourPlay /> },
+          { path: 'mixed', element: <MixedHome /> },
+          { path: 'mixed/play', element: <MixedPlay /> },
+          { path: 'spatial', element: <SpatialHome /> },
+          { path: 'spatial/play', element: <SpatialPlay /> },
+          { path: 'boss/1', element: <MathProjectPlaceholder projectId="boss-1" /> },
+          { path: 'boss/2', element: <MathProjectPlaceholder projectId="boss-2" /> },
+          { path: 'wrong', element: <MathWrongBook /> },
+        ],
+      },
+      {
+        path: 'english',
+        element: <English />,
+        children: [
+          { index: true, element: <EnglishHome /> },
+          { path: 'garden', element: <GardenHome /> },
+          { path: 'garden/in-progress', element: <GardenInProgress /> },
+          { path: 'garden/shrine/:bookId', element: <GardenShrine /> },
+        ],
+      },
       { path: 'science', element: <Science /> },
     ],
   },

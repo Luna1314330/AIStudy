@@ -1,0 +1,58 @@
+.spatial-stack-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.spatial-stack-wrap__label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0369a1;
+}
+
+.spatial-stack {
+  position: relative;
+  width: 120px;
+  height: 100px;
+}
+
+.spatial-stack__layer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.spatial-stack__layer:nth-child(1) {
+  top: 0;
+}
+
+.spatial-stack__layer:nth-child(2) {
+  top: 14px;
+}
+
+.spatial-stack__layer:nth-child(3) {
+  top: 28px;
+}
+
+.spatial-stack__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 22px);
+  gap: 3px;
+  padding: 6px;
+  border-radius: 8px;
+  background: rgba(224, 242, 254, 0.85);
+  border: 1px solid rgba(14, 165, 233, 0.25);
+}
+
+.spatial-stack__cell {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.spatial-stack__cell--on {
+  background: linear-gradient(135deg, #7dd3fc, #0ea5e9);
+  box-shadow: inset 0 -2px 0 rgba(3, 105, 161, 0.35);
+}

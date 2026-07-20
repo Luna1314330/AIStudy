@@ -1,0 +1,2111 @@
+{
+  "_comment": "由 CSV 导入。请编辑 data/templates/gardenBookList.reference.csv 后运行 npm run vocab:import",
+  "ls-phonics-2-01": [
+    {
+      "en": "ring",
+      "cn": "打电话"
+    },
+    {
+      "en": "rang",
+      "cn": "打电话"
+    },
+    {
+      "en": "hopping",
+      "cn": "跳"
+    },
+    {
+      "en": "singing",
+      "cn": "唱"
+    },
+    {
+      "en": "sick",
+      "cn": "生病"
+    },
+    {
+      "en": "Quick",
+      "cn": "快"
+    },
+    {
+      "en": "Duck",
+      "cn": "鸭子"
+    },
+    {
+      "en": "back",
+      "cn": "回来"
+    },
+    {
+      "en": "luck",
+      "cn": "幸运的"
+    },
+    {
+      "en": "box",
+      "cn": "盒子"
+    },
+    {
+      "en": "mix",
+      "cn": "混合"
+    },
+    {
+      "en": "six",
+      "cn": "六"
+    }
+  ],
+  "ls-phonics-2-02": [
+    {
+      "en": "singer",
+      "cn": "歌手"
+    },
+    {
+      "en": "sings",
+      "cn": "唱歌"
+    },
+    {
+      "en": "long",
+      "cn": "整个地"
+    },
+    {
+      "en": "Song",
+      "cn": "歌"
+    },
+    {
+      "en": "digging",
+      "cn": "挖"
+    },
+    {
+      "en": "chopping",
+      "cn": "砍"
+    },
+    {
+      "en": "shod",
+      "cn": "棚"
+    },
+    {
+      "en": "she",
+      "cn": "她"
+    },
+    {
+      "en": "shops",
+      "cn": "商店"
+    },
+    {
+      "en": "after",
+      "cn": "在...之后"
+    }
+  ],
+  "ls-phonics-2-03": [
+    {
+      "en": "Fish",
+      "cn": "鱼"
+    },
+    {
+      "en": "shop",
+      "cn": "店"
+    },
+    {
+      "en": "shut",
+      "cn": "关门"
+    },
+    {
+      "en": "Chip",
+      "cn": "薯条"
+    },
+    {
+      "en": "Which",
+      "cn": "哪一个"
+    },
+    {
+      "en": "much",
+      "cn": "大量的"
+    },
+    {
+      "en": "thin",
+      "cn": "细的"
+    },
+    {
+      "en": "This",
+      "cn": "这个"
+    }
+  ],
+  "ls-phonics-2-04": [
+    {
+      "en": "chess",
+      "cn": "国际象棋"
+    },
+    {
+      "en": "shells",
+      "cn": "贝壳"
+    },
+    {
+      "en": "This",
+      "cn": "这"
+    },
+    {
+      "en": "That",
+      "cn": "那"
+    },
+    {
+      "en": "Mr",
+      "cn": "先生"
+    },
+    {
+      "en": "have",
+      "cn": "买"
+    },
+    {
+      "en": "some",
+      "cn": "一些"
+    },
+    {
+      "en": "Mrs",
+      "cn": "太太"
+    }
+  ],
+  "ls-phonics-2-05": [
+    {
+      "en": "will",
+      "cn": "要"
+    },
+    {
+      "en": "tell",
+      "cn": "告诉"
+    },
+    {
+      "en": "ball",
+      "cn": "球"
+    },
+    {
+      "en": "bell",
+      "cn": "铃"
+    },
+    {
+      "en": "doll",
+      "cn": "玩具娃娃"
+    },
+    {
+      "en": "Miss",
+      "cn": "老师"
+    },
+    {
+      "en": "mess",
+      "cn": "一团糟"
+    },
+    {
+      "en": "off",
+      "cn": "离开"
+    },
+    {
+      "en": "Buzz",
+      "cn": "表示警告"
+    }
+  ],
+  "ls-phonics-2-06": [
+    {
+      "en": "has",
+      "cn": "有"
+    },
+    {
+      "en": "legs",
+      "cn": "腿"
+    },
+    {
+      "en": "sit",
+      "cn": "坐"
+    },
+    {
+      "en": "lots",
+      "cn": "很多的"
+    },
+    {
+      "en": "eggs",
+      "cn": "蛋"
+    },
+    {
+      "en": "yet",
+      "cn": "到目前为止"
+    },
+    {
+      "en": "odd",
+      "cn": "奇怪的"
+    },
+    {
+      "en": "beg",
+      "cn": "讨好"
+    },
+    {
+      "en": "hop",
+      "cn": "跳"
+    },
+    {
+      "en": "Now",
+      "cn": "现在"
+    }
+  ],
+  "ls-phonics-2-07": [
+    {
+      "en": "gull",
+      "cn": "海鸥"
+    },
+    {
+      "en": "buzz",
+      "cn": "嗡嗡声"
+    },
+    {
+      "en": "dish",
+      "cn": "盘子"
+    },
+    {
+      "en": "chicks",
+      "cn": "小鸡"
+    },
+    {
+      "en": "chips",
+      "cn": "薯条"
+    },
+    {
+      "en": "chickens",
+      "cn": "鸡肉"
+    },
+    {
+      "en": "puffin",
+      "cn": "海鹦"
+    },
+    {
+      "en": "wing",
+      "cn": "翅膀"
+    },
+    {
+      "en": "pocket",
+      "cn": "口袋"
+    },
+    {
+      "en": "vixen",
+      "cn": "雌狐狸"
+    },
+    {
+      "en": "their",
+      "cn": "他们的"
+    }
+  ],
+  "ls-phonics-2-08": [
+    {
+      "en": "yelling",
+      "cn": "大喊，吼叫"
+    },
+    {
+      "en": "yells",
+      "cn": "大喊"
+    },
+    {
+      "en": "quill",
+      "cn": "羽毛笔"
+    },
+    {
+      "en": "will",
+      "cn": "将要，会"
+    },
+    {
+      "en": "puffing",
+      "cn": "大口喘气"
+    },
+    {
+      "en": "whizzing",
+      "cn": "嗖嗖飞驰"
+    },
+    {
+      "en": "hush",
+      "cn": "嘘"
+    },
+    {
+      "en": "wish",
+      "cn": "希望"
+    },
+    {
+      "en": "then",
+      "cn": "然后"
+    },
+    {
+      "en": "them",
+      "cn": "他们"
+    },
+    {
+      "en": "tick",
+      "cn": "滴答作响"
+    },
+    {
+      "en": "tack",
+      "cn": "大头钉"
+    },
+    {
+      "en": "tock",
+      "cn": "滴答声"
+    }
+  ],
+  "ls-phonics-2-09": [
+    {
+      "en": "doll",
+      "cn": "洋娃娃"
+    },
+    {
+      "en": "fell",
+      "cn": "跌倒"
+    },
+    {
+      "en": "missing",
+      "cn": "丢失的"
+    },
+    {
+      "en": "rubbish",
+      "cn": "垃圾"
+    },
+    {
+      "en": "things",
+      "cn": "东西"
+    },
+    {
+      "en": "when",
+      "cn": "什么时候"
+    },
+    {
+      "en": "patting",
+      "cn": "轻拍"
+    },
+    {
+      "en": "picks",
+      "cn": "捡起"
+    },
+    {
+      "en": "boxes",
+      "cn": "盒子"
+    },
+    {
+      "en": "school",
+      "cn": "学校"
+    },
+    {
+      "en": "let's",
+      "cn": "让我们"
+    },
+    {
+      "en": "wash",
+      "cn": "洗刷"
+    }
+  ],
+  "ls-phonics-2-10": [
+    {
+      "en": "chat",
+      "cn": "聊天"
+    },
+    {
+      "en": "sang",
+      "cn": "唱歌"
+    },
+    {
+      "en": "long",
+      "cn": "长的"
+    },
+    {
+      "en": "gong",
+      "cn": "铜锣"
+    },
+    {
+      "en": "socks",
+      "cn": "袜子（复数）"
+    },
+    {
+      "en": "pack",
+      "cn": "收拾行李"
+    },
+    {
+      "en": "duck",
+      "cn": "鸭子"
+    },
+    {
+      "en": "quack",
+      "cn": "鸭叫声"
+    },
+    {
+      "en": "luck",
+      "cn": "幸运的"
+    },
+    {
+      "en": "ox",
+      "cn": "公牛"
+    },
+    {
+      "en": "said",
+      "cn": "说"
+    },
+    {
+      "en": "very",
+      "cn": "非常"
+    },
+    {
+      "en": "good",
+      "cn": "好"
+    }
+  ],
+  "ls-phonics-2-11": [
+    {
+      "en": "tells",
+      "cn": "告诉"
+    },
+    {
+      "en": "shall",
+      "cn": "将"
+    },
+    {
+      "en": "shack",
+      "cn": "棚屋"
+    },
+    {
+      "en": "wind",
+      "cn": "风"
+    },
+    {
+      "en": "sack",
+      "cn": "大袋子"
+    },
+    {
+      "en": "quick",
+      "cn": "快的"
+    },
+    {
+      "en": "rocks",
+      "cn": "岩石"
+    },
+    {
+      "en": "fox",
+      "cn": "狐狸"
+    },
+    {
+      "en": "six",
+      "cn": "六"
+    },
+    {
+      "en": "live",
+      "cn": "生活"
+    },
+    {
+      "en": "puts",
+      "cn": "放置"
+    }
+  ],
+  "ls-phonics-2-12": [
+    {
+      "en": "will",
+      "cn": "将要"
+    },
+    {
+      "en": "sell",
+      "cn": "卖"
+    },
+    {
+      "en": "shell",
+      "cn": "贝壳"
+    },
+    {
+      "en": "jazz",
+      "cn": "爵士乐"
+    },
+    {
+      "en": "rich",
+      "cn": "富有的"
+    },
+    {
+      "en": "chocs",
+      "cn": "巧克力"
+    },
+    {
+      "en": "hatch",
+      "cn": "孵化"
+    },
+    {
+      "en": "catch",
+      "cn": "抓住"
+    },
+    {
+      "en": "bang",
+      "cn": "砰的巨响"
+    },
+    {
+      "en": "hammock",
+      "cn": "吊床"
+    },
+    {
+      "en": "racket",
+      "cn": "吵闹声、球拍"
+    },
+    {
+      "en": "jacket",
+      "cn": "夹克"
+    },
+    {
+      "en": "pockets",
+      "cn": "口袋"
+    },
+    {
+      "en": "sax",
+      "cn": "萨克斯管"
+    }
+  ],
+  "youyou-3-01": [
+    {
+      "en": "couch",
+      "cn": "沙发"
+    },
+    {
+      "en": "flour",
+      "cn": "面粉"
+    },
+    {
+      "en": "puff",
+      "cn": "喷"
+    },
+    {
+      "en": "sneeze",
+      "cn": "打喷嚏"
+    },
+    {
+      "en": "tug-of-war",
+      "cn": "拔河"
+    },
+    {
+      "en": "blanket",
+      "cn": "毯子"
+    }
+  ],
+  "youyou-3-02": [
+    {
+      "en": "caterpillar",
+      "cn": "毛毛虫"
+    },
+    {
+      "en": "beetle",
+      "cn": "甲虫"
+    },
+    {
+      "en": "laugh at",
+      "cn": "嘲笑"
+    },
+    {
+      "en": "depressed",
+      "cn": "沮丧的"
+    },
+    {
+      "en": "strong",
+      "cn": "强壮的"
+    },
+    {
+      "en": "change",
+      "cn": "改变"
+    }
+  ],
+  "youyou-3-03": [
+    {
+      "en": "dragon",
+      "cn": "龙"
+    },
+    {
+      "en": "live",
+      "cn": "居住"
+    },
+    {
+      "en": "mountain",
+      "cn": "山"
+    },
+    {
+      "en": "children",
+      "cn": "孩子们"
+    },
+    {
+      "en": "fish",
+      "cn": "钓鱼"
+    },
+    {
+      "en": "fire",
+      "cn": "火"
+    }
+  ],
+  "youyou-3-04": [
+    {
+      "en": "crab",
+      "cn": "螃蟹"
+    },
+    {
+      "en": "whale",
+      "cn": "鲸鱼"
+    },
+    {
+      "en": "starfish",
+      "cn": "海星"
+    },
+    {
+      "en": "dolphin",
+      "cn": "海豚"
+    },
+    {
+      "en": "shark",
+      "cn": "鲨鱼"
+    },
+    {
+      "en": "island",
+      "cn": "岛"
+    }
+  ],
+  "youyou-3-05": [
+    {
+      "en": "sweets",
+      "cn": "糖果"
+    },
+    {
+      "en": "fairy",
+      "cn": "仙女"
+    },
+    {
+      "en": "peas",
+      "cn": "豌豆"
+    },
+    {
+      "en": "lettuce",
+      "cn": "生菜"
+    },
+    {
+      "en": "broccoli",
+      "cn": "西兰花"
+    },
+    {
+      "en": "smile",
+      "cn": "微笑"
+    }
+  ],
+  "youyou-3-06": [
+    {
+      "en": "begin",
+      "cn": "开始"
+    },
+    {
+      "en": "thorn",
+      "cn": "刺"
+    },
+    {
+      "en": "shell",
+      "cn": "贝壳"
+    },
+    {
+      "en": "take your temperature",
+      "cn": "量体温"
+    },
+    {
+      "en": "pills",
+      "cn": "药片"
+    },
+    {
+      "en": "card",
+      "cn": "卡片"
+    }
+  ],
+  "youyou-3-07": [
+    {
+      "en": "hand",
+      "cn": "手"
+    },
+    {
+      "en": "handlebar",
+      "cn": "把手"
+    },
+    {
+      "en": "pedal",
+      "cn": "脚踏板"
+    },
+    {
+      "en": "ring",
+      "cn": "按铃"
+    },
+    {
+      "en": "bell",
+      "cn": "铃铛"
+    },
+    {
+      "en": "training wheel",
+      "cn": "辅助轮"
+    }
+  ],
+  "youyou-3-08": [
+    {
+      "en": "ant",
+      "cn": "蚂蚁"
+    },
+    {
+      "en": "march",
+      "cn": "前进"
+    },
+    {
+      "en": "lead",
+      "cn": "带领"
+    },
+    {
+      "en": "piece",
+      "cn": "一片"
+    },
+    {
+      "en": "hold up",
+      "cn": "举起"
+    },
+    {
+      "en": "cheer",
+      "cn": "欢呼"
+    }
+  ],
+  "youyou-3-09": [
+    {
+      "en": "shade",
+      "cn": "树荫"
+    },
+    {
+      "en": "fire truck",
+      "cn": "消防车"
+    },
+    {
+      "en": "fireman",
+      "cn": "消防员"
+    },
+    {
+      "en": "cut off",
+      "cn": "砍掉"
+    },
+    {
+      "en": "cut down",
+      "cn": "砍倒"
+    },
+    {
+      "en": "bookcase",
+      "cn": "书架"
+    }
+  ],
+  "youyou-3-10": [
+    {
+      "en": "beach",
+      "cn": "海滩"
+    },
+    {
+      "en": "watch",
+      "cn": "看"
+    },
+    {
+      "en": "show",
+      "cn": "示范"
+    },
+    {
+      "en": "wave",
+      "cn": "波浪"
+    },
+    {
+      "en": "toe",
+      "cn": "脚趾"
+    },
+    {
+      "en": "back",
+      "cn": "背部"
+    }
+  ],
+  "youyou-3-11": [
+    {
+      "en": "gloves",
+      "cn": "手套"
+    },
+    {
+      "en": "stuff",
+      "cn": "东西"
+    },
+    {
+      "en": "sunglasses",
+      "cn": "太阳镜"
+    },
+    {
+      "en": "jeans",
+      "cn": "牛仔裤"
+    },
+    {
+      "en": "woman",
+      "cn": "女人"
+    },
+    {
+      "en": "scarecrow",
+      "cn": "稻草人"
+    }
+  ],
+  "youyou-3-12": [
+    {
+      "en": "honey",
+      "cn": "蜂蜜"
+    },
+    {
+      "en": "smell",
+      "cn": "气味"
+    },
+    {
+      "en": "hive",
+      "cn": "蜂房"
+    },
+    {
+      "en": "rude",
+      "cn": "没礼貌的"
+    },
+    {
+      "en": "polite",
+      "cn": "有礼貌的"
+    },
+    {
+      "en": "please",
+      "cn": "请"
+    }
+  ],
+  "youyou-3-13": [
+    {
+      "en": "dinosaur",
+      "cn": "恐龙"
+    },
+    {
+      "en": "alligator",
+      "cn": "鳄鱼"
+    },
+    {
+      "en": "ostrich",
+      "cn": "鸵鸟"
+    },
+    {
+      "en": "hump",
+      "cn": "大鼓包"
+    },
+    {
+      "en": "camel",
+      "cn": "骆驼"
+    },
+    {
+      "en": "disappointed",
+      "cn": "失望的"
+    }
+  ],
+  "youyou-3-14": [
+    {
+      "en": "granny",
+      "cn": "奶奶"
+    },
+    {
+      "en": "button",
+      "cn": "按钮"
+    },
+    {
+      "en": "seat belt",
+      "cn": "安全带"
+    },
+    {
+      "en": "hold on",
+      "cn": "坐稳"
+    },
+    {
+      "en": "bounce",
+      "cn": "跳跃"
+    },
+    {
+      "en": "zoom",
+      "cn": "疾行"
+    }
+  ],
+  "youyou-3-15": [
+    {
+      "en": "lightning",
+      "cn": "闪电"
+    },
+    {
+      "en": "thunder",
+      "cn": "雷"
+    },
+    {
+      "en": "candle",
+      "cn": "蜡烛"
+    },
+    {
+      "en": "hand shadow",
+      "cn": "手影"
+    },
+    {
+      "en": "pigeon",
+      "cn": "鸽子"
+    },
+    {
+      "en": "learn",
+      "cn": "学习"
+    }
+  ],
+  "youyou-3-16": [
+    {
+      "en": "sleep",
+      "cn": "睡觉"
+    },
+    {
+      "en": "hesitate",
+      "cn": "犹豫"
+    },
+    {
+      "en": "embarrassed",
+      "cn": "尴尬的"
+    },
+    {
+      "en": "think",
+      "cn": "想"
+    },
+    {
+      "en": "puzzled",
+      "cn": "困惑的"
+    },
+    {
+      "en": "return",
+      "cn": "回来"
+    }
+  ],
+  "youyou-3-17": [
+    {
+      "en": "wolf",
+      "cn": "狼"
+    },
+    {
+      "en": "tea",
+      "cn": "茶"
+    },
+    {
+      "en": "listen",
+      "cn": "听"
+    },
+    {
+      "en": "deer",
+      "cn": "鹿"
+    },
+    {
+      "en": "rat",
+      "cn": "老鼠"
+    },
+    {
+      "en": "wear",
+      "cn": "戴"
+    }
+  ],
+  "youyou-3-18": [
+    {
+      "en": "wild",
+      "cn": "乱糟糟的"
+    },
+    {
+      "en": "tidy",
+      "cn": "整齐的"
+    },
+    {
+      "en": "hairdresser",
+      "cn": "理发师"
+    },
+    {
+      "en": "hairstyle",
+      "cn": "发型"
+    },
+    {
+      "en": "braids",
+      "cn": "辫子"
+    },
+    {
+      "en": "curly",
+      "cn": "卷曲的"
+    }
+  ],
+  "youyou-3-19": [
+    {
+      "en": "magic stone",
+      "cn": "魔法石"
+    },
+    {
+      "en": "witch",
+      "cn": "女巫"
+    },
+    {
+      "en": "the poor",
+      "cn": "穷人"
+    },
+    {
+      "en": "nasty",
+      "cn": "讨厌的"
+    },
+    {
+      "en": "hut",
+      "cn": "小屋"
+    },
+    {
+      "en": "hate",
+      "cn": "憎恨"
+    }
+  ],
+  "youyou-3-20": [
+    {
+      "en": "peanut butter",
+      "cn": "花生酱"
+    },
+    {
+      "en": "sandwich",
+      "cn": "三明治"
+    },
+    {
+      "en": "empty",
+      "cn": "空的"
+    },
+    {
+      "en": "grocery",
+      "cn": "食品店"
+    },
+    {
+      "en": "chicken",
+      "cn": "鸡肉"
+    },
+    {
+      "en": "noodle soup",
+      "cn": "汤面"
+    }
+  ],
+  "youyou-3-21": [
+    {
+      "en": "hot air balloon",
+      "cn": "热气球"
+    },
+    {
+      "en": "south",
+      "cn": "向南方"
+    },
+    {
+      "en": "gull",
+      "cn": "海鸥"
+    },
+    {
+      "en": "sink",
+      "cn": "下沉"
+    },
+    {
+      "en": "swan",
+      "cn": "天鹅"
+    },
+    {
+      "en": "pelican",
+      "cn": "鹈鹕"
+    }
+  ],
+  "youyou-3-22": [
+    {
+      "en": "sandcastle",
+      "cn": "沙煲"
+    },
+    {
+      "en": "lie",
+      "cn": "躺"
+    },
+    {
+      "en": "watch out",
+      "cn": "小心"
+    },
+    {
+      "en": "seaweed",
+      "cn": "海草"
+    },
+    {
+      "en": "flag",
+      "cn": "旗子"
+    },
+    {
+      "en": "grand",
+      "cn": "宏伟的"
+    }
+  ],
+  "youyou-3-23": [
+    {
+      "en": "pick",
+      "cn": "摘"
+    },
+    {
+      "en": "blackberry",
+      "cn": "黑莓"
+    },
+    {
+      "en": "hazelnut",
+      "cn": "榛子"
+    },
+    {
+      "en": "upset",
+      "cn": "沮丧的"
+    },
+    {
+      "en": "fetch",
+      "cn": "取"
+    },
+    {
+      "en": "thick",
+      "cn": "厚的"
+    }
+  ],
+  "youyou-3-24": [
+    {
+      "en": "maple tree",
+      "cn": "枫树"
+    },
+    {
+      "en": "fall",
+      "cn": "秋天"
+    },
+    {
+      "en": "river",
+      "cn": "河"
+    },
+    {
+      "en": "hamster",
+      "cn": "仓鼠"
+    },
+    {
+      "en": "night",
+      "cn": "夜晚"
+    },
+    {
+      "en": "sparrow",
+      "cn": "麻雀"
+    }
+  ],
+  "youyou-3-25": [
+    {
+      "en": "captain",
+      "cn": "船长"
+    },
+    {
+      "en": "king",
+      "cn": "国王"
+    },
+    {
+      "en": "chef",
+      "cn": "厨师"
+    },
+    {
+      "en": "bottle",
+      "cn": "瓶子"
+    },
+    {
+      "en": "first mate",
+      "cn": "大幅"
+    },
+    {
+      "en": "bow",
+      "cn": "鞠躬"
+    }
+  ],
+  "youyou-3-26": [
+    {
+      "en": "chase",
+      "cn": "追捕"
+    },
+    {
+      "en": "bag",
+      "cn": "袋子"
+    },
+    {
+      "en": "squeal",
+      "cn": "尖叫"
+    },
+    {
+      "en": "bump",
+      "cn": "冲撞"
+    },
+    {
+      "en": "struggle",
+      "cn": "挣扎"
+    },
+    {
+      "en": "escape",
+      "cn": "逃跑"
+    }
+  ],
+  "youyou-3-27": [
+    {
+      "en": "mud pie",
+      "cn": "泥饼"
+    },
+    {
+      "en": "worried",
+      "cn": "担心的"
+    },
+    {
+      "en": "decorate",
+      "cn": "装饰"
+    },
+    {
+      "en": "twig",
+      "cn": "细枝"
+    },
+    {
+      "en": "pebble",
+      "cn": "鹅卵石"
+    },
+    {
+      "en": "giggle",
+      "cn": "咯咯笑"
+    }
+  ],
+  "youyou-3-28": [
+    {
+      "en": "playhouse",
+      "cn": "儿童游戏房"
+    },
+    {
+      "en": "balcony",
+      "cn": "阳台"
+    },
+    {
+      "en": "sunshine",
+      "cn": "阳光"
+    },
+    {
+      "en": "wilt",
+      "cn": "枯萎"
+    },
+    {
+      "en": "water",
+      "cn": "浇水"
+    },
+    {
+      "en": "bud",
+      "cn": "花蕾"
+    }
+  ],
+  "youyou-3-29": [
+    {
+      "en": "airport",
+      "cn": "机场"
+    },
+    {
+      "en": "fasten",
+      "cn": "系牢"
+    },
+    {
+      "en": "stewardess",
+      "cn": "空姐"
+    },
+    {
+      "en": "swallow",
+      "cn": "吞咽"
+    },
+    {
+      "en": "screen",
+      "cn": "屏幕"
+    },
+    {
+      "en": "pilot",
+      "cn": "飞行员"
+    }
+  ],
+  "youyou-3-30": [
+    {
+      "en": "robin",
+      "cn": "知更鸟"
+    },
+    {
+      "en": "weak",
+      "cn": "虚弱的"
+    },
+    {
+      "en": "chop",
+      "cn": "砍"
+    },
+    {
+      "en": "Christmas tree",
+      "cn": "圣诞树"
+    },
+    {
+      "en": "feeder",
+      "cn": "喂食器"
+    },
+    {
+      "en": "star",
+      "cn": "星星"
+    }
+  ],
+  "youyou-3-31": [
+    {
+      "en": "recess",
+      "cn": "休息时间"
+    },
+    {
+      "en": "shy",
+      "cn": "害羞的"
+    },
+    {
+      "en": "peek",
+      "cn": "偷看"
+    },
+    {
+      "en": "point",
+      "cn": "指"
+    },
+    {
+      "en": "mitt",
+      "cn": "棒球手套"
+    },
+    {
+      "en": "team",
+      "cn": "队"
+    }
+  ],
+  "youyou-3-32": [
+    {
+      "en": "inventor",
+      "cn": "发明家"
+    },
+    {
+      "en": "robot",
+      "cn": "机器人"
+    },
+    {
+      "en": "test tube",
+      "cn": "试管"
+    },
+    {
+      "en": "pump up",
+      "cn": "打气"
+    },
+    {
+      "en": "tire",
+      "cn": "轮胎"
+    },
+    {
+      "en": "mayor",
+      "cn": "市长"
+    }
+  ],
+  "youyou-3-33": [
+    {
+      "en": "giant",
+      "cn": "巨人"
+    },
+    {
+      "en": "village",
+      "cn": "村子"
+    },
+    {
+      "en": "show off",
+      "cn": "炫耀"
+    },
+    {
+      "en": "fair",
+      "cn": "集市"
+    },
+    {
+      "en": "win",
+      "cn": "赢"
+    },
+    {
+      "en": "ashamed",
+      "cn": "羞愧的"
+    }
+  ],
+  "youyou-3-34": [
+    {
+      "en": "pail",
+      "cn": "桶"
+    },
+    {
+      "en": "polish",
+      "cn": "擦亮"
+    },
+    {
+      "en": "pork",
+      "cn": "猪肉"
+    },
+    {
+      "en": "nail",
+      "cn": "钉子"
+    },
+    {
+      "en": "board",
+      "cn": "木板"
+    },
+    {
+      "en": "cork",
+      "cn": "木塞"
+    }
+  ],
+  "youyou-3-35": [
+    {
+      "en": "princess",
+      "cn": "公主"
+    },
+    {
+      "en": "football",
+      "cn": "足球"
+    },
+    {
+      "en": "queen",
+      "cn": "王后"
+    },
+    {
+      "en": "handstand",
+      "cn": "倒立"
+    },
+    {
+      "en": "prince",
+      "cn": "王子"
+    },
+    {
+      "en": "trousers",
+      "cn": "裤子"
+    }
+  ],
+  "youyou-3-36": [
+    {
+      "en": "crane",
+      "cn": "鹤"
+    },
+    {
+      "en": "leader",
+      "cn": "领导者"
+    },
+    {
+      "en": "sunset",
+      "cn": "日落"
+    },
+    {
+      "en": "biggest",
+      "cn": "最大的"
+    },
+    {
+      "en": "blow",
+      "cn": "（风）吹"
+    },
+    {
+      "en": "roar",
+      "cn": "轰鸣"
+    }
+  ],
+  "youyou-3-37": [
+    {
+      "en": "garden shed",
+      "cn": "花园工具屋"
+    },
+    {
+      "en": "dusk",
+      "cn": "黄昏"
+    },
+    {
+      "en": "wonder",
+      "cn": "感到疑惑"
+    },
+    {
+      "en": "mat",
+      "cn": "地垫"
+    },
+    {
+      "en": "get out of bed",
+      "cn": "起床"
+    },
+    {
+      "en": "basement",
+      "cn": "地下室"
+    }
+  ],
+  "youyou-3-38": [
+    {
+      "en": "thirsty",
+      "cn": "渴的"
+    },
+    {
+      "en": "blood",
+      "cn": "血"
+    },
+    {
+      "en": "ginger",
+      "cn": "姜黄色的"
+    },
+    {
+      "en": "suck",
+      "cn": "吸"
+    },
+    {
+      "en": "cover",
+      "cn": "覆盖"
+    },
+    {
+      "en": "spray",
+      "cn": "喷雾"
+    }
+  ],
+  "youyou-3-39": [
+    {
+      "en": "skate",
+      "cn": "滑冰"
+    },
+    {
+      "en": "town",
+      "cn": "城镇"
+    },
+    {
+      "en": "moose",
+      "cn": "麋鹿"
+    },
+    {
+      "en": "terrible",
+      "cn": "糟糕的"
+    },
+    {
+      "en": "discouraged",
+      "cn": "灰心的"
+    },
+    {
+      "en": "surprise",
+      "cn": "使惊讶"
+    }
+  ],
+  "youyou-3-40": [
+    {
+      "en": "vegetables",
+      "cn": "蔬菜"
+    },
+    {
+      "en": "harvest",
+      "cn": "收获"
+    },
+    {
+      "en": "green pepper",
+      "cn": "青椒"
+    },
+    {
+      "en": "eggplant",
+      "cn": "茄子"
+    },
+    {
+      "en": "drop",
+      "cn": "落下"
+    },
+    {
+      "en": "beaver",
+      "cn": "河狸"
+    }
+  ],
+  "youyou-3-41": [
+    {
+      "en": "starved",
+      "cn": "饥饿的"
+    },
+    {
+      "en": "whisper",
+      "cn": "悄声说"
+    },
+    {
+      "en": "frightened",
+      "cn": "害怕的"
+    },
+    {
+      "en": "edge",
+      "cn": "边缘"
+    },
+    {
+      "en": "slip",
+      "cn": "滑倒"
+    },
+    {
+      "en": "flap",
+      "cn": "拍动"
+    }
+  ],
+  "youyou-3-42": [
+    {
+      "en": "plan",
+      "cn": "计划"
+    },
+    {
+      "en": "playground",
+      "cn": "游乐场"
+    },
+    {
+      "en": "woods",
+      "cn": "树林"
+    },
+    {
+      "en": "berries",
+      "cn": "浆果"
+    },
+    {
+      "en": "ax",
+      "cn": "斧子"
+    },
+    {
+      "en": "think over",
+      "cn": "仔细考虑"
+    }
+  ],
+  "youyou-3-43": [
+    {
+      "en": "screwdriver",
+      "cn": "螺丝刀"
+    },
+    {
+      "en": "saw",
+      "cn": "锯"
+    },
+    {
+      "en": "glue",
+      "cn": "胶水"
+    },
+    {
+      "en": "hand",
+      "cn": "指针"
+    },
+    {
+      "en": "number",
+      "cn": "数字"
+    },
+    {
+      "en": "spoke",
+      "cn": "辐条"
+    }
+  ],
+  "youyou-3-44": [
+    {
+      "en": "blackboard",
+      "cn": "黑板"
+    },
+    {
+      "en": "note",
+      "cn": "便签"
+    },
+    {
+      "en": "seat",
+      "cn": "座位"
+    },
+    {
+      "en": "raindrop",
+      "cn": "雨点"
+    },
+    {
+      "en": "game",
+      "cn": "游戏"
+    },
+    {
+      "en": "fan",
+      "cn": "扇子"
+    }
+  ],
+  "youyou-3-45": [
+    {
+      "en": "planet",
+      "cn": "行星"
+    },
+    {
+      "en": "visit",
+      "cn": "拜访"
+    },
+    {
+      "en": "awful",
+      "cn": "糟糕的"
+    },
+    {
+      "en": "milkshake",
+      "cn": "奶昔"
+    },
+    {
+      "en": "jellyfish",
+      "cn": "水母"
+    },
+    {
+      "en": "lemonade",
+      "cn": "柠檬水"
+    }
+  ],
+  "youyou-3-46": [
+    {
+      "en": "rich food",
+      "cn": "大鱼大肉"
+    },
+    {
+      "en": "ham",
+      "cn": "火腿"
+    },
+    {
+      "en": "pizza",
+      "cn": "披萨"
+    },
+    {
+      "en": "roast turkey",
+      "cn": "烤火鸡"
+    },
+    {
+      "en": "palace",
+      "cn": "宫殿"
+    },
+    {
+      "en": "porridge",
+      "cn": "粥"
+    }
+  ],
+  "youyou-3-47": [
+    {
+      "en": "trash can",
+      "cn": "垃圾桶"
+    },
+    {
+      "en": "fat",
+      "cn": "胖的"
+    },
+    {
+      "en": "surprised",
+      "cn": "惊讶的"
+    },
+    {
+      "en": "light pole",
+      "cn": "路灯杆"
+    },
+    {
+      "en": "stick",
+      "cn": "变速杆"
+    },
+    {
+      "en": "save",
+      "cn": "救"
+    }
+  ],
+  "youyou-3-48": [
+    {
+      "en": "through",
+      "cn": "穿过"
+    },
+    {
+      "en": "freezing",
+      "cn": "极冷的"
+    },
+    {
+      "en": "armchair",
+      "cn": "扶手椅"
+    },
+    {
+      "en": "log",
+      "cn": "大木头"
+    },
+    {
+      "en": "digging",
+      "cn": "挖"
+    },
+    {
+      "en": "perfect",
+      "cn": "完美的"
+    }
+  ],
+  "youyou-3-49": [
+    {
+      "en": "sore throat",
+      "cn": "嗓子疼"
+    },
+    {
+      "en": "syrup",
+      "cn": "糖浆"
+    },
+    {
+      "en": "medicine",
+      "cn": "药"
+    },
+    {
+      "en": "swamp",
+      "cn": "沼泽"
+    },
+    {
+      "en": "swat",
+      "cn": "猛击"
+    },
+    {
+      "en": "swarming",
+      "cn": "成群飞舞的"
+    }
+  ],
+  "youyou-3-50": [
+    {
+      "en": "space museum",
+      "cn": "太空博物馆"
+    },
+    {
+      "en": "guide",
+      "cn": "导游"
+    },
+    {
+      "en": "astronaut",
+      "cn": "宇航员"
+    },
+    {
+      "en": "spaceship",
+      "cn": "宇宙飞船"
+    },
+    {
+      "en": "keyboard",
+      "cn": "键盘"
+    },
+    {
+      "en": "satellite",
+      "cn": "卫星"
+    }
+  ],
+  "youyou-3-51": [
+    {
+      "en": "tusk",
+      "cn": "长牙"
+    },
+    {
+      "en": "warthog",
+      "cn": "疣猪"
+    },
+    {
+      "en": "aquarium",
+      "cn": "水族馆"
+    },
+    {
+      "en": "orca",
+      "cn": "鲸鱼"
+    },
+    {
+      "en": "walrus",
+      "cn": "海象"
+    },
+    {
+      "en": "T-Rex",
+      "cn": "霸王龙"
+    }
+  ],
+  "youyou-3-52": [
+    {
+      "en": "go camping",
+      "cn": "去露营"
+    },
+    {
+      "en": "airbed",
+      "cn": "充气床垫"
+    },
+    {
+      "en": "barbecue",
+      "cn": "烧烤野餐"
+    },
+    {
+      "en": "flat",
+      "cn": "没气的"
+    },
+    {
+      "en": "plug",
+      "cn": "塞子"
+    },
+    {
+      "en": "bowerbird",
+      "cn": "园丁鸟"
+    }
+  ],
+  "youyou-3-53": [
+    {
+      "en": "twins",
+      "cn": "双胞胎"
+    },
+    {
+      "en": "alike",
+      "cn": "相像的"
+    },
+    {
+      "en": "share",
+      "cn": "共用"
+    },
+    {
+      "en": "model airplane",
+      "cn": "飞机模型"
+    },
+    {
+      "en": "yell",
+      "cn": "叫喊"
+    },
+    {
+      "en": "can",
+      "cn": "罐头"
+    }
+  ],
+  "youyou-3-54": [
+    {
+      "en": "Monday",
+      "cn": "星期一"
+    },
+    {
+      "en": "school bag",
+      "cn": "书包"
+    },
+    {
+      "en": "phone",
+      "cn": "手机"
+    },
+    {
+      "en": "pocket",
+      "cn": "口袋"
+    },
+    {
+      "en": "sitting room",
+      "cn": "起居室"
+    },
+    {
+      "en": "key",
+      "cn": "钥匙"
+    }
+  ],
+  "youyou-3-55": [
+    {
+      "en": "curry",
+      "cn": "咖喱饭"
+    },
+    {
+      "en": "below",
+      "cn": "在下面"
+    },
+    {
+      "en": "sushi",
+      "cn": "寿司"
+    },
+    {
+      "en": "taco",
+      "cn": "墨西哥薄饼卷"
+    },
+    {
+      "en": "hamburger",
+      "cn": "汉堡包"
+    },
+    {
+      "en": "French bread",
+      "cn": "法式面包"
+    }
+  ],
+  "youyou-3-56": [
+    {
+      "en": "missing",
+      "cn": "不见的"
+    },
+    {
+      "en": "cream",
+      "cn": "奶油"
+    },
+    {
+      "en": "go upstairs",
+      "cn": "上楼"
+    },
+    {
+      "en": "go downstairs",
+      "cn": "下楼"
+    },
+    {
+      "en": "surprise",
+      "cn": "惊喜的"
+    },
+    {
+      "en": "oak tree",
+      "cn": "橡树"
+    }
+  ],
+  "youyou-3-57": [
+    {
+      "en": "alarm",
+      "cn": "报警"
+    },
+    {
+      "en": "radar",
+      "cn": "雷达"
+    },
+    {
+      "en": "examine",
+      "cn": "检查"
+    },
+    {
+      "en": "damage",
+      "cn": "损坏"
+    },
+    {
+      "en": "a sheet of metal",
+      "cn": "一片金属"
+    },
+    {
+      "en": "hammer",
+      "cn": "锤子"
+    }
+  ],
+  "youyou-3-58": [
+    {
+      "en": "ocean",
+      "cn": "海洋"
+    },
+    {
+      "en": "group",
+      "cn": "群"
+    },
+    {
+      "en": "discover",
+      "cn": "发现"
+    },
+    {
+      "en": "voice",
+      "cn": "声音"
+    },
+    {
+      "en": "dizzy",
+      "cn": "眩晕的"
+    },
+    {
+      "en": "move",
+      "cn": "移动"
+    }
+  ],
+  "youyou-3-59": [
+    {
+      "en": "class",
+      "cn": "班"
+    },
+    {
+      "en": "teacher",
+      "cn": "老师"
+    },
+    {
+      "en": "performer",
+      "cn": "表演者"
+    },
+    {
+      "en": "ring",
+      "cn": "圈"
+    },
+    {
+      "en": "burst into tears",
+      "cn": "突然大哭"
+    },
+    {
+      "en": "pop",
+      "cn": "发出啪的一声"
+    }
+  ],
+  "youyou-3-60": [
+    {
+      "en": "write",
+      "cn": "写"
+    },
+    {
+      "en": "letter",
+      "cn": "信"
+    },
+    {
+      "en": "post",
+      "cn": "邮寄"
+    },
+    {
+      "en": "meet",
+      "cn": "见面"
+    },
+    {
+      "en": "flu",
+      "cn": "流感"
+    },
+    {
+      "en": "receive",
+      "cn": "收到"
+    }
+  ]
+}

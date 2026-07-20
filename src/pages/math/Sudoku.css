@@ -1,0 +1,430 @@
+.sudoku-hub,
+.sudoku-play {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  min-height: 0;
+  padding: 20px 24px 24px;
+  overflow: auto;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(129, 140, 248, 0.18), transparent 42%),
+    radial-gradient(circle at 88% 82%, rgba(167, 139, 250, 0.16), transparent 40%),
+    #f8fafc;
+}
+
+.sudoku-hub__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sudoku-hub__back {
+  flex-shrink: 0;
+  color: #6366f1;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sudoku-hub__header h2 {
+  margin: 0 0 4px;
+  font-size: 22px;
+  color: #4338ca;
+}
+
+.sudoku-hub__header p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.sudoku-hub__daily-tag {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.12);
+  color: #4338ca;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sudoku-hub__wrong {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #b91c1c;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sudoku-hub__host {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+}
+
+.sudoku-hub__host--compact p {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.45;
+}
+
+.sudoku-hub__host-avatar {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.sudoku-hub__host strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #312e81;
+}
+
+.sudoku-hub__host p {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.45;
+}
+
+.sudoku-hub__bonus {
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(34, 197, 94, 0.1);
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sudoku-hub__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.sudoku-hub__stats div {
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.sudoku-hub__stats span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.sudoku-hub__stats strong {
+  font-size: 17px;
+  color: #1e1b4b;
+}
+
+.sudoku-hub__modes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.sudoku-card {
+  padding: 16px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+.sudoku-card--streak {
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.sudoku-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: #312e81;
+}
+
+.sudoku-card p {
+  margin: 0 0 14px;
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.sudoku-card__btn {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 12px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sudoku-card__btn--soft {
+  background: rgba(99, 102, 241, 0.12);
+  color: #4338ca;
+}
+
+.sudoku-card__btn--gold {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.sudoku-hub__hint {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.sudoku-play__board-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.sudoku-play__overlay {
+  position: absolute;
+  inset: -8px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.42);
+  pointer-events: none;
+  animation: sudoku-overlay-in 0.18s ease;
+}
+
+.sudoku-play__toast {
+  width: min(100%, 320px);
+  padding: 14px 16px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.28);
+  animation: sudoku-toast-pop 0.22s ease;
+}
+
+.sudoku-play__toast strong {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.sudoku-play__toast span {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #1e1b4b;
+}
+
+.sudoku-play__toast em {
+  font-style: normal;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.sudoku-play__toast--wrong {
+  background: #fff;
+  border: 2px solid #ef4444;
+}
+
+.sudoku-play__toast--wrong strong {
+  color: #dc2626;
+}
+
+.sudoku-play__toast--critical {
+  background: #fef2f2;
+  border: 2px solid #dc2626;
+}
+
+.sudoku-play__toast--critical strong {
+  color: #b91c1c;
+  font-size: 17px;
+}
+
+.sudoku-play__toast--shield {
+  background: #f0fdf4;
+  border: 2px solid #22c55e;
+}
+
+.sudoku-play__toast--shield strong {
+  color: #15803d;
+}
+
+@keyframes sudoku-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sudoku-toast-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.sudoku-play__hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid rgba(99, 102, 241, 0.18);
+  font-size: 14px;
+  font-weight: 700;
+  color: #4338ca;
+}
+
+.sudoku-play__hud--warn {
+  border-color: rgba(239, 68, 68, 0.45);
+  background: rgba(254, 242, 242, 0.95);
+  color: #b91c1c;
+}
+
+.sudoku-play__hud-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sudoku-play__mistake-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.sudoku-play__mistake-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #22c55e;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.sudoku-play__mistake-dot--used {
+  background: #ef4444;
+}
+
+.sudoku-play__mistake-dot--pulse {
+  animation: sudoku-dot-pulse 0.6s ease 2;
+}
+
+@keyframes sudoku-dot-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+}
+
+.sudoku-play__shield {
+  font-size: 13px;
+  color: #15803d;
+}
+
+.sudoku-play__shield--used {
+  color: #94a3b8;
+}
+
+.sudoku-play__pad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+  gap: 8px;
+  max-width: 420px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sudoku-play__pad button {
+  padding: 12px 0;
+  border: 2px solid rgba(99, 102, 241, 0.22);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  color: #312e81;
+  cursor: pointer;
+}
+
+.sudoku-play__erase {
+  grid-column: 1 / -1;
+  font-size: 14px !important;
+}
+
+.sudoku-play__tools {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sudoku-play__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  text-align: center;
+}
+
+.sudoku-play__result h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #312e81;
+}
+
+.sudoku-play__result p {
+  margin: 0;
+  color: #475569;
+}
+
+.sudoku-play__reward {
+  color: #15803d !important;
+  font-weight: 700;
+}
+
+.sudoku-play__result-actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 360px;
+}
+
+@media (max-width: 900px) {
+  .sudoku-hub__modes {
+    grid-template-columns: 1fr;
+  }
+
+  .sudoku-hub__stats {
+    grid-template-columns: 1fr;
+  }
+}

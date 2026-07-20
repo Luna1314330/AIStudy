@@ -50,12 +50,14 @@
   gap: 8px;
   padding: 12px 22px;
   border-radius: 999px;
+  font: inherit;
   font-size: 16px;
   font-weight: 500;
   color: var(--color-text-secondary);
   transition: all 0.2s;
   white-space: nowrap;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .header__nav-item:hover {
@@ -119,12 +121,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 10px 12px;
   border-radius: 8px;
+  font: inherit;
   font-size: 14px;
   color: var(--color-text);
   text-decoration: none;
   transition: background 0.15s;
+  cursor: pointer;
 }
 
 .sidebar__item:hover {

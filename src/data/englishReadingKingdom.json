@@ -1,0 +1,1758 @@
+{
+  "mapName": "英语阅读王国",
+  "totalBooks": 72,
+  "totalStars": 0,
+  "currentRegion": "garden",
+  "regions": [
+    {
+      "id": "garden",
+      "name": "初始台地",
+      "level": 1,
+      "starsRequired": 0,
+      "towerUnlocked": true,
+      "icon": "⛪",
+      "bgColor": "#FFE4B5",
+      "description": "云海之上的启蒙台地，从这里踏上阅读王国之旅",
+      "series": [
+        {
+          "seriesName": "丽声拼读故事会",
+          "seriesLevel": "第2级",
+          "publisher": "外研社 / 牛津大学出版社",
+          "focus": "CVC单词拼读 + 简单句型",
+          "batches": [
+            {
+              "folder": "丽声拼读故事会2_1",
+              "books": [
+                {
+                  "id": "ls-phonics-2-01",
+                  "title": "Doctor Duck",
+                  "titleCn": "鸭子医生",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_1",
+                  "coverFile": "Doctor Duck.jpg",
+                  "coverImage": "/books/lisheng2_1/Doctor%20Duck.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-02",
+                  "title": "Singing Dad",
+                  "titleCn": "爱唱歌的爸爸",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_1",
+                  "coverFile": "Singing Dad.jpg",
+                  "coverImage": "/books/lisheng2_1/Singing%20Dad.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-03",
+                  "title": "Fish and Chips",
+                  "titleCn": "炸鱼薯条",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_1",
+                  "coverFile": "Fish and Chips.jpg",
+                  "coverImage": "/books/lisheng2_1/Fish%20and%20Chips.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-04",
+                  "title": "This and That",
+                  "titleCn": "这个和那个",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_1",
+                  "coverFile": "This and That.jpg",
+                  "coverImage": "/books/lisheng2_1/This%20and%20That.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-05",
+                  "title": "Miss Miss",
+                  "titleCn": "想念小姐",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_1",
+                  "coverFile": "Miss MIss.jpg",
+                  "coverImage": "/books/lisheng2_1/Miss%20MIss.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-06",
+                  "title": "The Odd Pet",
+                  "titleCn": "奇怪的宠物",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_1",
+                  "coverFile": "The Odd Pet.jpg",
+                  "coverImage": "/books/lisheng2_1/The%20Odd%20Pet.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "丽声拼读故事会2_2",
+              "books": [
+                {
+                  "id": "ls-phonics-2-07",
+                  "title": "Animal Quiz",
+                  "titleCn": "动物问答",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_2",
+                  "coverFile": "Animal Quiz.jpg",
+                  "coverImage": "/books/lisheng2_2/Animal%20Quiz.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-08",
+                  "title": "Mr Zed",
+                  "titleCn": "泽德先生",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_2",
+                  "coverFile": "Mr Zed.jpg",
+                  "coverImage": "/books/lisheng2_2/Mr%20Zed.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-09",
+                  "title": "The Doll in the Bin",
+                  "titleCn": "垃圾桶里的娃娃",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_2",
+                  "coverFile": "The Doll in the Bin.jpg",
+                  "coverImage": "/books/lisheng2_2/The%20Doll%20in%20the%20Bin.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-10",
+                  "title": "The Ox and the Yak",
+                  "titleCn": "公牛和牦牛",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_2",
+                  "coverFile": "The Ox and the Yak.jpg",
+                  "coverImage": "/books/lisheng2_2/The%20Ox%20and%20the%20Yak.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-11",
+                  "title": "The Seven Kids",
+                  "titleCn": "七只小羊",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_2",
+                  "coverFile": "The Seven Kids.jpg",
+                  "coverImage": "/books/lisheng2_2/The%20Seven%20Kids.jpg"
+                },
+                {
+                  "id": "ls-phonics-2-12",
+                  "title": "Ron Rabbit's Egg",
+                  "titleCn": "罗恩兔子的蛋",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "丽声拼读故事会2_2",
+                  "coverFile": "Ron Rabbit's Egg.jpg",
+                  "coverImage": "/books/lisheng2_2/Ron%20Rabbit's%20Egg.jpg"
+                }
+              ]
+            }
+          ],
+          "books": [
+            {
+              "id": "ls-phonics-2-01",
+              "title": "Doctor Duck",
+              "titleCn": "鸭子医生",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_1",
+              "coverFile": "Doctor Duck.jpg",
+              "coverImage": "/books/lisheng2_1/Doctor%20Duck.jpg"
+            },
+            {
+              "id": "ls-phonics-2-02",
+              "title": "Singing Dad",
+              "titleCn": "爱唱歌的爸爸",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_1",
+              "coverFile": "Singing Dad.jpg",
+              "coverImage": "/books/lisheng2_1/Singing%20Dad.jpg"
+            },
+            {
+              "id": "ls-phonics-2-03",
+              "title": "Fish and Chips",
+              "titleCn": "炸鱼薯条",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_1",
+              "coverFile": "Fish and Chips.jpg",
+              "coverImage": "/books/lisheng2_1/Fish%20and%20Chips.jpg"
+            },
+            {
+              "id": "ls-phonics-2-04",
+              "title": "This and That",
+              "titleCn": "这个和那个",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_1",
+              "coverFile": "This and That.jpg",
+              "coverImage": "/books/lisheng2_1/This%20and%20That.jpg"
+            },
+            {
+              "id": "ls-phonics-2-05",
+              "title": "Miss Miss",
+              "titleCn": "想念小姐",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_1",
+              "coverFile": "Miss MIss.jpg",
+              "coverImage": "/books/lisheng2_1/Miss%20MIss.jpg"
+            },
+            {
+              "id": "ls-phonics-2-06",
+              "title": "The Odd Pet",
+              "titleCn": "奇怪的宠物",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_1",
+              "coverFile": "The Odd Pet.jpg",
+              "coverImage": "/books/lisheng2_1/The%20Odd%20Pet.jpg"
+            },
+            {
+              "id": "ls-phonics-2-07",
+              "title": "Animal Quiz",
+              "titleCn": "动物问答",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_2",
+              "coverFile": "Animal Quiz.jpg",
+              "coverImage": "/books/lisheng2_2/Animal%20Quiz.jpg"
+            },
+            {
+              "id": "ls-phonics-2-08",
+              "title": "Mr Zed",
+              "titleCn": "泽德先生",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_2",
+              "coverFile": "Mr Zed.jpg",
+              "coverImage": "/books/lisheng2_2/Mr%20Zed.jpg"
+            },
+            {
+              "id": "ls-phonics-2-09",
+              "title": "The Doll in the Bin",
+              "titleCn": "垃圾桶里的娃娃",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_2",
+              "coverFile": "The Doll in the Bin.jpg",
+              "coverImage": "/books/lisheng2_2/The%20Doll%20in%20the%20Bin.jpg"
+            },
+            {
+              "id": "ls-phonics-2-10",
+              "title": "The Ox and the Yak",
+              "titleCn": "公牛和牦牛",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_2",
+              "coverFile": "The Ox and the Yak.jpg",
+              "coverImage": "/books/lisheng2_2/The%20Ox%20and%20the%20Yak.jpg"
+            },
+            {
+              "id": "ls-phonics-2-11",
+              "title": "The Seven Kids",
+              "titleCn": "七只小羊",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_2",
+              "coverFile": "The Seven Kids.jpg",
+              "coverImage": "/books/lisheng2_2/The%20Seven%20Kids.jpg"
+            },
+            {
+              "id": "ls-phonics-2-12",
+              "title": "Ron Rabbit's Egg",
+              "titleCn": "罗恩兔子的蛋",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "丽声拼读故事会2_2",
+              "coverFile": "Ron Rabbit's Egg.jpg",
+              "coverImage": "/books/lisheng2_2/Ron%20Rabbit's%20Egg.jpg"
+            }
+          ]
+        },
+        {
+          "seriesName": "悠游阅读成长计划",
+          "seriesLevel": "第3级",
+          "publisher": "外研社",
+          "focus": "听力词汇积累 + 主题拓展",
+          "batches": [
+            {
+              "folder": "悠游阅读成长计划3_1",
+              "books": [
+                {
+                  "id": "youyou-3-01",
+                  "title": "Bella the Babysitter",
+                  "titleCn": "保姆贝拉",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_1",
+                  "coverFile": "Bella the babysitter.jpg",
+                  "coverImage": "/books/yy3_1/Bella%20the%20babysitter.jpg"
+                },
+                {
+                  "id": "youyou-3-02",
+                  "title": "Caterpillar's Dream",
+                  "titleCn": "毛毛虫的梦想",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_1",
+                  "coverFile": "Caterpillar‘s Dream.jpg",
+                  "coverImage": "/books/yy3_1/Caterpillar%E2%80%98s%20Dream.jpg"
+                },
+                {
+                  "id": "youyou-3-03",
+                  "title": "Daisy Dragon",
+                  "titleCn": "小龙黛西",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_1",
+                  "coverFile": "Daisy Dragon.jpg",
+                  "coverImage": "/books/yy3_1/Daisy%20Dragon.jpg"
+                },
+                {
+                  "id": "youyou-3-04",
+                  "title": "The Crab and the Starfish",
+                  "titleCn": "螃蟹和海星",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_1",
+                  "coverFile": "The Crab and the Starfish.jpg",
+                  "coverImage": "/books/yy3_1/The%20Crab%20and%20the%20Starfish.jpg"
+                },
+                {
+                  "id": "youyou-3-05",
+                  "title": "My Tooth Hurts",
+                  "titleCn": "牙疼",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_1",
+                  "coverFile": "My Tooth Hurts.jpg",
+                  "coverImage": "/books/yy3_1/My%20Tooth%20Hurts.jpg"
+                },
+                {
+                  "id": "youyou-3-06",
+                  "title": "Doctor Mouse",
+                  "titleCn": "老鼠医生",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_1",
+                  "coverFile": "Doctor Mouse.jpg",
+                  "coverImage": "/books/yy3_1/Doctor%20Mouse.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_2",
+              "books": [
+                {
+                  "id": "youyou-3-07",
+                  "title": "Panda's Pink Bike",
+                  "titleCn": "熊猫的粉色自行车",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_2",
+                  "coverFile": "Panda's Pink Bike.jpg",
+                  "coverImage": "/books/yy3_2/Panda's%20Pink%20Bike.jpg"
+                },
+                {
+                  "id": "youyou-3-08",
+                  "title": "Dave Makes the Save",
+                  "titleCn": "聪明的小蚂蚁",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_2",
+                  "coverFile": "Dave Makes the Save.jpg",
+                  "coverImage": "/books/yy3_2/Dave%20Makes%20the%20Save.jpg"
+                },
+                {
+                  "id": "youyou-3-09",
+                  "title": "Sarah and the Very Old Tree",
+                  "titleCn": "莎拉和老树",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_2",
+                  "coverFile": "Sarah and the Very Old Tree.jpg",
+                  "coverImage": "/books/yy3_2/Sarah%20and%20the%20Very%20Old%20Tree.jpg"
+                },
+                {
+                  "id": "youyou-3-10",
+                  "title": "Let's Swim",
+                  "titleCn": "去游泳吧",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_2",
+                  "coverFile": "Let's Swim.jpg",
+                  "coverImage": "/books/yy3_2/Let's%20Swim.jpg"
+                },
+                {
+                  "id": "youyou-3-11",
+                  "title": "For Flora",
+                  "titleCn": "谁是小芙",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_2",
+                  "coverFile": "For Flora.jpg",
+                  "coverImage": "/books/yy3_2/For%20Flora.jpg"
+                },
+                {
+                  "id": "youyou-3-12",
+                  "title": "Be Polite",
+                  "titleCn": "有礼貌",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_2",
+                  "coverFile": "Be Polite.jpg",
+                  "coverImage": "/books/yy3_2/Be%20Polite.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_3",
+              "books": [
+                {
+                  "id": "youyou-3-13",
+                  "title": "Are There Dinosaurs?",
+                  "titleCn": "那儿有恐龙吗？",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_3",
+                  "coverFile": "Are There Dinosaurs.jpg",
+                  "coverImage": "/books/yy3_3/Are%20There%20Dinosaurs.jpg"
+                },
+                {
+                  "id": "youyou-3-14",
+                  "title": "Ceanny's New Car",
+                  "titleCn": "西尼的新车",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_3",
+                  "coverFile": "Ceanny's New Car.jpg",
+                  "coverImage": "/books/yy3_3/Ceanny's%20New%20Car.jpg"
+                },
+                {
+                  "id": "youyou-3-15",
+                  "title": "Lights Out",
+                  "titleCn": "停电了",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_3",
+                  "coverFile": "Lights out.jpg",
+                  "coverImage": "/books/yy3_3/Lights%20out.jpg"
+                },
+                {
+                  "id": "youyou-3-16",
+                  "title": "A Winter Cave for Bernard",
+                  "titleCn": "伯纳德的冬日洞穴",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_3",
+                  "coverFile": "A Winter Cave for Bernard.jpg",
+                  "coverImage": "/books/yy3_3/A%20Winter%20Cave%20for%20Bernard.jpg"
+                },
+                {
+                  "id": "youyou-3-17",
+                  "title": "To the Forest",
+                  "titleCn": "去森林里",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_3",
+                  "coverFile": "To the Forest.jpg",
+                  "coverImage": "/books/yy3_3/To%20the%20Forest.jpg"
+                },
+                {
+                  "id": "youyou-3-18",
+                  "title": "Brian's Long Hair",
+                  "titleCn": "布赖恩的长发",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_3",
+                  "coverFile": "Brian's Long Hair.jpg",
+                  "coverImage": "/books/yy3_3/Brian's%20Long%20Hair.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_4",
+              "books": [
+                {
+                  "id": "youyou-3-19",
+                  "title": "The Magic Stone",
+                  "titleCn": "魔法石",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_4",
+                  "coverFile": "The Magic Stone.jpg",
+                  "coverImage": "/books/yy3_4/The%20Magic%20Stone.jpg"
+                },
+                {
+                  "id": "youyou-3-20",
+                  "title": "Peanut Butter Sandwiches",
+                  "titleCn": "花生酱三明治",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_4",
+                  "coverFile": "Peanut Butter Sandwiches.jpg",
+                  "coverImage": "/books/yy3_4/Peanut%20Butter%20Sandwiches.jpg"
+                },
+                {
+                  "id": "youyou-3-21",
+                  "title": "George in the Hot Air Balloon",
+                  "titleCn": "乔治的热气球",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_4",
+                  "coverFile": "George in the Hot Air Ballon.jpg",
+                  "coverImage": "/books/yy3_4/George%20in%20the%20Hot%20Air%20Ballon.jpg"
+                },
+                {
+                  "id": "youyou-3-22",
+                  "title": "Jack's Sandcastle",
+                  "titleCn": "杰克的沙堡",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_4",
+                  "coverFile": "Jack's Sandcastle.jpg",
+                  "coverImage": "/books/yy3_4/Jack's%20Sandcastle.jpg"
+                },
+                {
+                  "id": "youyou-3-23",
+                  "title": "Just Right",
+                  "titleCn": "刚刚好",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_4",
+                  "coverFile": "Just Right.jpg",
+                  "coverImage": "/books/yy3_4/Just%20Right.jpg"
+                },
+                {
+                  "id": "youyou-3-24",
+                  "title": "The Leaf Leaves Home",
+                  "titleCn": "树叶离家记",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_4",
+                  "coverFile": "The Leaf Leaves Home.jpg",
+                  "coverImage": "/books/yy3_4/The%20Leaf%20Leaves%20Home.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_5",
+              "books": [
+                {
+                  "id": "youyou-3-25",
+                  "title": "Lazybones Does the Cleaning",
+                  "titleCn": "懒骨头的好办法",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_5",
+                  "coverFile": "Lazybones Does the Cleaning.jpg",
+                  "coverImage": "/books/yy3_5/Lazybones%20Does%20the%20Cleaning.jpg"
+                },
+                {
+                  "id": "youyou-3-26",
+                  "title": "Pig Chase",
+                  "titleCn": "抓猪比赛",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_5",
+                  "coverFile": "Pig Chase.jpg",
+                  "coverImage": "/books/yy3_5/Pig%20Chase.jpg"
+                },
+                {
+                  "id": "youyou-3-27",
+                  "title": "The Mud Pie Party",
+                  "titleCn": "泥饼派对",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_5",
+                  "coverFile": "The Mud Pie Party.jpg",
+                  "coverImage": "/books/yy3_5/The%20Mud%20Pie%20Party.jpg"
+                },
+                {
+                  "id": "youyou-3-28",
+                  "title": "Take Care of Your Plant",
+                  "titleCn": "皮普种花",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_5",
+                  "coverFile": "Take Care of Your Plant.jpg",
+                  "coverImage": "/books/yy3_5/Take%20Care%20of%20Your%20Plant.jpg"
+                },
+                {
+                  "id": "youyou-3-29",
+                  "title": "The First Time on a Plane",
+                  "titleCn": "第一次坐飞机",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_5",
+                  "coverFile": "The First Time on a Plane.jpg",
+                  "coverImage": "/books/yy3_5/The%20First%20Time%20on%20a%20Plane.jpg"
+                },
+                {
+                  "id": "youyou-3-30",
+                  "title": "Dot's Christmas",
+                  "titleCn": "多特的圣诞节",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_5",
+                  "coverFile": "Dot's Christmas.jpg",
+                  "coverImage": "/books/yy3_5/Dot's%20Christmas.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_6",
+              "books": [
+                {
+                  "id": "youyou-3-31",
+                  "title": "The Shy Turtle",
+                  "titleCn": "害羞的乌龟",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_6",
+                  "coverFile": "The Shy Turtle.jpg",
+                  "coverImage": "/books/yy3_6/The%20Shy%20Turtle.jpg"
+                },
+                {
+                  "id": "youyou-3-32",
+                  "title": "Mr. Pintop's Robot",
+                  "titleCn": "钉头先生的机器人",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_6",
+                  "coverFile": "Mr. Pintop's Robot.jpg",
+                  "coverImage": "/books/yy3_6/Mr.%20Pintop's%20Robot.jpg"
+                },
+                {
+                  "id": "youyou-3-33",
+                  "title": "Who's Stronger",
+                  "titleCn": "谁更强壮？",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_6",
+                  "coverFile": "Who's Stronger.jpg",
+                  "coverImage": "/books/yy3_6/Who%27s%20Stronger.jpg"
+                },
+                {
+                  "id": "youyou-3-34",
+                  "title": "Lazybones Does the Shopping",
+                  "titleCn": "懒骨头购物记",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_6",
+                  "coverFile": "Lazybones Does the Shopping.jpg",
+                  "coverImage": "/books/yy3_6/Lazybones%20Does%20the%20Shopping.jpg"
+                },
+                {
+                  "id": "youyou-3-35",
+                  "title": "The Princess in Trousers",
+                  "titleCn": "穿裤子的公主",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_6",
+                  "coverFile": "The Princess in Trousers.jpg",
+                  "coverImage": "/books/yy3_6/The%20Princess%20in%20Trousers.jpg"
+                },
+                {
+                  "id": "youyou-3-36",
+                  "title": "The Lost Crane",
+                  "titleCn": "迷路的白鹤",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_6",
+                  "coverFile": "The Lost Crane.jpg",
+                  "coverImage": "/books/yy3_6/The%20Lost%20Crane.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_7",
+              "books": [
+                {
+                  "id": "youyou-3-37",
+                  "title": "A Strange Noise",
+                  "titleCn": "奇怪的声音",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_7",
+                  "coverFile": "A Strange Noise.jpg",
+                  "coverImage": "/books/yy3_7/A%20Strange%20Noise.jpg"
+                },
+                {
+                  "id": "youyou-3-38",
+                  "title": "Mozzy Mosquito",
+                  "titleCn": "蚊子莫兹",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_7",
+                  "coverFile": "Mozzy Mosquito.jpg",
+                  "coverImage": "/books/yy3_7/Mozzy%20Mosquito.jpg"
+                },
+                {
+                  "id": "youyou-3-39",
+                  "title": "Marvin Skates",
+                  "titleCn": "马文溜冰",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_7",
+                  "coverFile": "Marvin Skates.jpg",
+                  "coverImage": "/books/yy3_7/Marvin%20Skates.jpg"
+                },
+                {
+                  "id": "youyou-3-40",
+                  "title": "Vegetables Fly Away",
+                  "titleCn": "蔬菜飞走了",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_7",
+                  "coverFile": "Vegetables Fly Away.jpg",
+                  "coverImage": "/books/yy3_7/Vegetables%20Fly%20Away.jpg"
+                },
+                {
+                  "id": "youyou-3-41",
+                  "title": "We Can Fly",
+                  "titleCn": "我们能飞",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_7",
+                  "coverFile": "We can Fly.jpg",
+                  "coverImage": "/books/yy3_7/We%20can%20Fly.jpg"
+                },
+                {
+                  "id": "youyou-3-42",
+                  "title": "Fox Brothers Want a Playground",
+                  "titleCn": "狐狸兄弟想要游乐场",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_7",
+                  "coverFile": "Fox Brothers Wants a Playground.jpg",
+                  "coverImage": "/books/yy3_7/Fox%20Brothers%20Wants%20a%20Playground.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_8",
+              "books": [
+                {
+                  "id": "youyou-3-43",
+                  "title": "Mike's Cool Bike",
+                  "titleCn": "迈克的酷自行车",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_8",
+                  "coverFile": "Mike's Cool Bike.jpg",
+                  "coverImage": "/books/yy3_8/Mike's%20Cool%20Bike.jpg"
+                },
+                {
+                  "id": "youyou-3-44",
+                  "title": "Big Ears",
+                  "titleCn": "大耳朵",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_8",
+                  "coverFile": "Big Ears.jpg",
+                  "coverImage": "/books/yy3_8/Big%20Ears.jpg"
+                },
+                {
+                  "id": "youyou-3-45",
+                  "title": "Rodney Runs from Lunch",
+                  "titleCn": "罗德尼逃避午餐",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_8",
+                  "coverFile": "Rodney Runs from Lunch.jpg",
+                  "coverImage": "/books/yy3_8/Rodney%20Runs%20from%20Lunch.jpg"
+                },
+                {
+                  "id": "youyou-3-46",
+                  "title": "The King's Not Well",
+                  "titleCn": "国王生病了",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_8",
+                  "coverFile": "The King's Not Well.jpg",
+                  "coverImage": "/books/yy3_8/The%20King's%20Not%20Well.jpg"
+                },
+                {
+                  "id": "youyou-3-47",
+                  "title": "Frankie's Flying Machine",
+                  "titleCn": "弗兰基的飞行器",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_8",
+                  "coverFile": "Frankie's Flying Machine.jpg",
+                  "coverImage": "/books/yy3_8/Frankie's%20Flying%20Machine.jpg"
+                },
+                {
+                  "id": "youyou-3-48",
+                  "title": "The Perfect Mouse House",
+                  "titleCn": "完美的老鼠房子",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_8",
+                  "coverFile": "The Perfect Mouse House.jpg",
+                  "coverImage": "/books/yy3_8/The%20Perfect%20Mouse%20House.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_9",
+              "books": [
+                {
+                  "id": "youyou-3-49",
+                  "title": "Five Angry Elephants",
+                  "titleCn": "五只生气的大象",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_9",
+                  "coverFile": "Five Angry Elephants.jpg",
+                  "coverImage": "/books/yy3_9/Five%20Angry%20Elephants.jpg"
+                },
+                {
+                  "id": "youyou-3-50",
+                  "title": "Blast Off!",
+                  "titleCn": "发射！",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_9",
+                  "coverFile": "Blast off.jpg",
+                  "coverImage": "/books/yy3_9/Blast%20off.jpg"
+                },
+                {
+                  "id": "youyou-3-51",
+                  "title": "Whose tooth",
+                  "titleCn": "谁的牙齿？",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_9",
+                  "coverFile": "Whose tooth.jpg",
+                  "coverImage": "/books/yy3_9/Whose%20tooth.jpg"
+                },
+                {
+                  "id": "youyou-3-52",
+                  "title": "\"Careless\" Kenny",
+                  "titleCn": "\"粗心的\"肯尼",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_9",
+                  "coverFile": "“Carless\" Kenny.jpg",
+                  "coverImage": "/books/yy3_9/%E2%80%9CCarless%22%20Kenny.jpg"
+                },
+                {
+                  "id": "youyou-3-53",
+                  "title": "Twins Trouble",
+                  "titleCn": "双胞胎的麻烦",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_9",
+                  "coverFile": "Twins Trouble.jpg",
+                  "coverImage": "/books/yy3_9/Twins%20Trouble.jpg"
+                },
+                {
+                  "id": "youyou-3-54",
+                  "title": "It's Time to Go",
+                  "titleCn": "该走了",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_9",
+                  "coverFile": "It's  Time To Go .jpg",
+                  "coverImage": "/books/yy3_9/It's%20%20Time%20To%20Go%20.jpg"
+                }
+              ]
+            },
+            {
+              "folder": "悠游阅读成长计划3_10",
+              "books": [
+                {
+                  "id": "youyou-3-55",
+                  "title": "A Tasty Journey",
+                  "titleCn": "美味的旅程",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_10",
+                  "coverFile": "A Tasty Journey.jpg",
+                  "coverImage": "/books/yy3_10/A%20Tasty%20Journey.jpg"
+                },
+                {
+                  "id": "youyou-3-56",
+                  "title": "Where Are My Toys?",
+                  "titleCn": "我的玩具去哪了？",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_10",
+                  "coverFile": "Where Are My Toys.jpg",
+                  "coverImage": "/books/yy3_10/Where%20Are%20My%20Toys.jpg"
+                },
+                {
+                  "id": "youyou-3-57",
+                  "title": "The First Flight in Space",
+                  "titleCn": "第一次太空飞行",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_10",
+                  "coverFile": "The First Flight in Space.jpg",
+                  "coverImage": "/books/yy3_10/The%20First%20Flight%20in%20Space.jpg"
+                },
+                {
+                  "id": "youyou-3-58",
+                  "title": "Freddy the Free Fish",
+                  "titleCn": "自由的小鱼弗雷迪",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_10",
+                  "coverFile": "Freddy the Free Fish.jpg",
+                  "coverImage": "/books/yy3_10/Freddy%20the%20Free%20Fish.jpg"
+                },
+                {
+                  "id": "youyou-3-59",
+                  "title": "The Magic Bubble",
+                  "titleCn": "魔法泡泡",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_10",
+                  "coverFile": "The Magic bubble.jpg",
+                  "coverImage": "/books/yy3_10/The%20Magic%20bubble.jpg"
+                },
+                {
+                  "id": "youyou-3-60",
+                  "title": "Jojo Writes to the King",
+                  "titleCn": "乔乔给国王写信",
+                  "difficulty": 1,
+                  "starsReward": 1,
+                  "completed": false,
+                  "assetFolder": "悠游阅读成长计划3_10",
+                  "coverFile": "Jojo Writes To The king.jpg",
+                  "coverImage": "/books/yy3_10/Jojo%20Writes%20To%20The%20king.jpg"
+                }
+              ]
+            }
+          ],
+          "books": [
+            {
+              "id": "youyou-3-01",
+              "title": "Bella the Babysitter",
+              "titleCn": "保姆贝拉",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_1",
+              "coverFile": "Bella the babysitter.jpg",
+              "coverImage": "/books/yy3_1/Bella%20the%20babysitter.jpg"
+            },
+            {
+              "id": "youyou-3-02",
+              "title": "Caterpillar's Dream",
+              "titleCn": "毛毛虫的梦想",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_1",
+              "coverFile": "Caterpillar‘s Dream.jpg",
+              "coverImage": "/books/yy3_1/Caterpillar%E2%80%98s%20Dream.jpg"
+            },
+            {
+              "id": "youyou-3-03",
+              "title": "Daisy Dragon",
+              "titleCn": "小龙黛西",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_1",
+              "coverFile": "Daisy Dragon.jpg",
+              "coverImage": "/books/yy3_1/Daisy%20Dragon.jpg"
+            },
+            {
+              "id": "youyou-3-04",
+              "title": "The Crab and the Starfish",
+              "titleCn": "螃蟹和海星",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_1",
+              "coverFile": "The Crab and the Starfish.jpg",
+              "coverImage": "/books/yy3_1/The%20Crab%20and%20the%20Starfish.jpg"
+            },
+            {
+              "id": "youyou-3-05",
+              "title": "My Tooth Hurts",
+              "titleCn": "牙疼",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_1",
+              "coverFile": "My Tooth Hurts.jpg",
+              "coverImage": "/books/yy3_1/My%20Tooth%20Hurts.jpg"
+            },
+            {
+              "id": "youyou-3-06",
+              "title": "Doctor Mouse",
+              "titleCn": "老鼠医生",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_1",
+              "coverFile": "Doctor Mouse.jpg",
+              "coverImage": "/books/yy3_1/Doctor%20Mouse.jpg"
+            },
+            {
+              "id": "youyou-3-07",
+              "title": "Panda's Pink Bike",
+              "titleCn": "熊猫的粉色自行车",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_2",
+              "coverFile": "Panda's Pink Bike.jpg",
+              "coverImage": "/books/yy3_2/Panda's%20Pink%20Bike.jpg"
+            },
+            {
+              "id": "youyou-3-08",
+              "title": "Dave Makes the Save",
+              "titleCn": "聪明的小蚂蚁",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_2",
+              "coverFile": "Dave Makes the Save.jpg",
+              "coverImage": "/books/yy3_2/Dave%20Makes%20the%20Save.jpg"
+            },
+            {
+              "id": "youyou-3-09",
+              "title": "Sarah and the Very Old Tree",
+              "titleCn": "莎拉和老树",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_2",
+              "coverFile": "Sarah and the Very Old Tree.jpg",
+              "coverImage": "/books/yy3_2/Sarah%20and%20the%20Very%20Old%20Tree.jpg"
+            },
+            {
+              "id": "youyou-3-10",
+              "title": "Let's Swim",
+              "titleCn": "去游泳吧",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_2",
+              "coverFile": "Let's Swim.jpg",
+              "coverImage": "/books/yy3_2/Let's%20Swim.jpg"
+            },
+            {
+              "id": "youyou-3-11",
+              "title": "For Flora",
+              "titleCn": "谁是小芙",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_2",
+              "coverFile": "For Flora.jpg",
+              "coverImage": "/books/yy3_2/For%20Flora.jpg"
+            },
+            {
+              "id": "youyou-3-12",
+              "title": "Be Polite",
+              "titleCn": "有礼貌",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_2",
+              "coverFile": "Be Polite.jpg",
+              "coverImage": "/books/yy3_2/Be%20Polite.jpg"
+            },
+            {
+              "id": "youyou-3-13",
+              "title": "Are There Dinosaurs?",
+              "titleCn": "那儿那儿有恐龙吗？",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_3",
+              "coverFile": "Are There Dinosaurs.jpg",
+              "coverImage": "/books/yy3_3/Are%20There%20Dinosaurs.jpg"
+            },
+            {
+              "id": "youyou-3-14",
+              "title": "Ceanny's New Car",
+              "titleCn": "西尼的新车",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_3",
+              "coverFile": "Ceanny's New Car.jpg",
+              "coverImage": "/books/yy3_3/Ceanny's%20New%20Car.jpg"
+            },
+            {
+              "id": "youyou-3-15",
+              "title": "Lights Out",
+              "titleCn": "停电了",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_3",
+              "coverFile": "Lights out.jpg",
+              "coverImage": "/books/yy3_3/Lights%20out.jpg"
+            },
+            {
+              "id": "youyou-3-16",
+              "title": "A Winter Cave for Bernard",
+              "titleCn": "伯纳德的冬日洞穴",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_3",
+              "coverFile": "A Winter Cave for Bernard.jpg",
+              "coverImage": "/books/yy3_3/A%20Winter%20Cave%20for%20Bernard.jpg"
+            },
+            {
+              "id": "youyou-3-17",
+              "title": "To the Forest",
+              "titleCn": "去森林里",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_3",
+              "coverFile": "To the Forest.jpg",
+              "coverImage": "/books/yy3_3/To%20the%20Forest.jpg"
+            },
+            {
+              "id": "youyou-3-18",
+              "title": "Brian's Long Hair",
+              "titleCn": "布赖恩的长发",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_3",
+              "coverFile": "Brian's Long Hair.jpg",
+              "coverImage": "/books/yy3_3/Brian's%20Long%20Hair.jpg"
+            },
+            {
+              "id": "youyou-3-19",
+              "title": "The Magic Stone",
+              "titleCn": "魔法石",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_4",
+              "coverFile": "The Magic Stone.jpg",
+              "coverImage": "/books/yy3_4/The%20Magic%20Stone.jpg"
+            },
+            {
+              "id": "youyou-3-20",
+              "title": "Peanut Butter Sandwiches",
+              "titleCn": "花生酱三明治",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_4",
+              "coverFile": "Peanut Butter Sandwiches.jpg",
+              "coverImage": "/books/yy3_4/Peanut%20Butter%20Sandwiches.jpg"
+            },
+            {
+              "id": "youyou-3-21",
+              "title": "George in the Hot Air Balloon",
+              "titleCn": "乔治的热气球",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_4",
+              "coverFile": "George in the Hot Air Ballon.jpg",
+              "coverImage": "/books/yy3_4/George%20in%20the%20Hot%20Air%20Ballon.jpg"
+            },
+            {
+              "id": "youyou-3-22",
+              "title": "Jack's Sandcastle",
+              "titleCn": "杰克的沙堡",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_4",
+              "coverFile": "Jack's Sandcastle.jpg",
+              "coverImage": "/books/yy3_4/Jack's%20Sandcastle.jpg"
+            },
+            {
+              "id": "youyou-3-23",
+              "title": "Just Right",
+              "titleCn": "刚刚好",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_4",
+              "coverFile": "Just Right.jpg",
+              "coverImage": "/books/yy3_4/Just%20Right.jpg"
+            },
+            {
+              "id": "youyou-3-24",
+              "title": "The Leaf Leaves Home",
+              "titleCn": "树叶离家记",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_4",
+              "coverFile": "The Leaf Leaves Home.jpg",
+              "coverImage": "/books/yy3_4/The%20Leaf%20Leaves%20Home.jpg"
+            },
+            {
+              "id": "youyou-3-25",
+              "title": "Lazybones Does the Cleaning",
+              "titleCn": "懒骨头的好办法",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_5",
+              "coverFile": "Lazybones Does the Cleaning.jpg",
+              "coverImage": "/books/yy3_5/Lazybones%20Does%20the%20Cleaning.jpg"
+            },
+            {
+              "id": "youyou-3-26",
+              "title": "Pig Chase",
+              "titleCn": "抓猪比赛",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_5",
+              "coverFile": "Pig Chase.jpg",
+              "coverImage": "/books/yy3_5/Pig%20Chase.jpg"
+            },
+            {
+              "id": "youyou-3-27",
+              "title": "The Mud Pie Party",
+              "titleCn": "泥饼派对",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_5",
+              "coverFile": "The Mud Pie Party.jpg",
+              "coverImage": "/books/yy3_5/The%20Mud%20Pie%20Party.jpg"
+            },
+            {
+              "id": "youyou-3-28",
+              "title": "Take Care of Your Plant",
+              "titleCn": "皮普种花",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_5",
+              "coverFile": "Take Care of Your Plant.jpg",
+              "coverImage": "/books/yy3_5/Take%20Care%20of%20Your%20Plant.jpg"
+            },
+            {
+              "id": "youyou-3-29",
+              "title": "The First Time on a Plane",
+              "titleCn": "第一次坐飞机",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_5",
+              "coverFile": "The First Time on a Plane.jpg",
+              "coverImage": "/books/yy3_5/The%20First%20Time%20on%20a%20Plane.jpg"
+            },
+            {
+              "id": "youyou-3-30",
+              "title": "Dot's Christmas",
+              "titleCn": "多特的圣诞节",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_5",
+              "coverFile": "Dot's Christmas.jpg",
+              "coverImage": "/books/yy3_5/Dot's%20Christmas.jpg"
+            },
+            {
+              "id": "youyou-3-31",
+              "title": "The Shy Turtle",
+              "titleCn": "害羞的乌龟",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_6",
+              "coverFile": "The Shy Turtle.jpg",
+              "coverImage": "/books/yy3_6/The%20Shy%20Turtle.jpg"
+            },
+            {
+              "id": "youyou-3-32",
+              "title": "Mr. Pintop's Robot",
+              "titleCn": "钉头先生的机器人",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_6",
+              "coverFile": "Mr. Pintop's Robot.jpg",
+              "coverImage": "/books/yy3_6/Mr.%20Pintop's%20Robot.jpg"
+            },
+            {
+              "id": "youyou-3-33",
+              "title": "Who's Stronger",
+              "titleCn": "谁更强壮？",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_6",
+              "coverFile": "Who's Stronger.jpg",
+              "coverImage": "/books/yy3_6/Who%27s%20Stronger.jpg"
+            },
+            {
+              "id": "youyou-3-34",
+              "title": "Lazybones Does the Shopping",
+              "titleCn": "懒骨头购物记",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_6",
+              "coverFile": "Lazybones Does the Shopping.jpg",
+              "coverImage": "/books/yy3_6/Lazybones%20Does%20the%20Shopping.jpg"
+            },
+            {
+              "id": "youyou-3-35",
+              "title": "The Princess in Trousers",
+              "titleCn": "穿裤子的公主",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_6",
+              "coverFile": "The Princess in Trousers.jpg",
+              "coverImage": "/books/yy3_6/The%20Princess%20in%20Trousers.jpg"
+            },
+            {
+              "id": "youyou-3-36",
+              "title": "The Lost Crane",
+              "titleCn": "迷路的白鹤",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_6",
+              "coverFile": "The Lost Crane.jpg",
+              "coverImage": "/books/yy3_6/The%20Lost%20Crane.jpg"
+            },
+            {
+              "id": "youyou-3-37",
+              "title": "A Strange Noise",
+              "titleCn": "奇怪的声音",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_7",
+              "coverFile": "A Strange Noise.jpg",
+              "coverImage": "/books/yy3_7/A%20Strange%20Noise.jpg"
+            },
+            {
+              "id": "youyou-3-38",
+              "title": "Mozzy Mosquito",
+              "titleCn": "蚊子莫兹",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_7",
+              "coverFile": "Mozzy Mosquito.jpg",
+              "coverImage": "/books/yy3_7/Mozzy%20Mosquito.jpg"
+            },
+            {
+              "id": "youyou-3-39",
+              "title": "Marvin Skates",
+              "titleCn": "马文溜冰",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_7",
+              "coverFile": "Marvin Skates.jpg",
+              "coverImage": "/books/yy3_7/Marvin%20Skates.jpg"
+            },
+            {
+              "id": "youyou-3-40",
+              "title": "Vegetables Fly Away",
+              "titleCn": "蔬菜飞走了",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_7",
+              "coverFile": "Vegetables Fly Away.jpg",
+              "coverImage": "/books/yy3_7/Vegetables%20Fly%20Away.jpg"
+            },
+            {
+              "id": "youyou-3-41",
+              "title": "We Can Fly",
+              "titleCn": "我们能飞",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_7",
+              "coverFile": "We can Fly.jpg",
+              "coverImage": "/books/yy3_7/We%20can%20Fly.jpg"
+            },
+            {
+              "id": "youyou-3-42",
+              "title": "Fox Brothers Want a Playground",
+              "titleCn": "狐狸兄弟想要游乐场",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_7",
+              "coverFile": "Fox Brothers Wants a Playground.jpg",
+              "coverImage": "/books/yy3_7/Fox%20Brothers%20Wants%20a%20Playground.jpg"
+            },
+            {
+              "id": "youyou-3-43",
+              "title": "Mike's Cool Bike",
+              "titleCn": "迈克的酷自行车",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_8",
+              "coverFile": "Mike's Cool Bike.jpg",
+              "coverImage": "/books/yy3_8/Mike's%20Cool%20Bike.jpg"
+            },
+            {
+              "id": "youyou-3-44",
+              "title": "Big Ears",
+              "titleCn": "大耳朵",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_8",
+              "coverFile": "Big Ears.jpg",
+              "coverImage": "/books/yy3_8/Big%20Ears.jpg"
+            },
+            {
+              "id": "youyou-3-45",
+              "title": "Rodney Runs from Lunch",
+              "titleCn": "罗德尼逃避午餐",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_8",
+              "coverFile": "Rodney Runs from Lunch.jpg",
+              "coverImage": "/books/yy3_8/Rodney%20Runs%20from%20Lunch.jpg"
+            },
+            {
+              "id": "youyou-3-46",
+              "title": "The King's Not Well",
+              "titleCn": "国王生病了",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_8",
+              "coverFile": "The King's Not Well.jpg",
+              "coverImage": "/books/yy3_8/The%20King's%20Not%20Well.jpg"
+            },
+            {
+              "id": "youyou-3-47",
+              "title": "Frankie's Flying Machine",
+              "titleCn": "弗兰基的飞行器",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_8",
+              "coverFile": "Frankie's Flying Machine.jpg",
+              "coverImage": "/books/yy3_8/Frankie's%20Flying%20Machine.jpg"
+            },
+            {
+              "id": "youyou-3-48",
+              "title": "The Perfect Mouse House",
+              "titleCn": "完美的老鼠房子",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_8",
+              "coverFile": "The Perfect Mouse House.jpg",
+              "coverImage": "/books/yy3_8/The%20Perfect%20Mouse%20House.jpg"
+            },
+            {
+              "id": "youyou-3-49",
+              "title": "Five Angry Elephants",
+              "titleCn": "五只生气的大象",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_9",
+              "coverFile": "Five Angry Elephants.jpg",
+              "coverImage": "/books/yy3_9/Five%20Angry%20Elephants.jpg"
+            },
+            {
+              "id": "youyou-3-50",
+              "title": "Blast Off!",
+              "titleCn": "发射！",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_9",
+              "coverFile": "Blast off.jpg",
+              "coverImage": "/books/yy3_9/Blast%20off.jpg"
+            },
+            {
+              "id": "youyou-3-51",
+              "title": "Whose tooth",
+              "titleCn": "谁的牙齿？",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_9",
+              "coverFile": "Whose tooth.jpg",
+              "coverImage": "/books/yy3_9/Whose%20tooth.jpg"
+            },
+            {
+              "id": "youyou-3-52",
+              "title": "\"Careless\" Kenny",
+              "titleCn": "\"粗心的\"肯尼",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_9",
+              "coverFile": "“Carless\" Kenny.jpg",
+              "coverImage": "/books/yy3_9/%E2%80%9CCarless%22%20Kenny.jpg"
+            },
+            {
+              "id": "youyou-3-53",
+              "title": "Twins Trouble",
+              "titleCn": "双胞胎的麻烦",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_9",
+              "coverFile": "Twins Trouble.jpg",
+              "coverImage": "/books/yy3_9/Twins%20Trouble.jpg"
+            },
+            {
+              "id": "youyou-3-54",
+              "title": "It's Time to Go",
+              "titleCn": "该走了",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_9",
+              "coverFile": "It's  Time To Go .jpg",
+              "coverImage": "/books/yy3_9/It's%20%20Time%20To%20Go%20.jpg"
+            },
+            {
+              "id": "youyou-3-55",
+              "title": "A Tasty Journey",
+              "titleCn": "美味的旅程",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_10",
+              "coverFile": "A Tasty Journey.jpg",
+              "coverImage": "/books/yy3_10/A%20Tasty%20Journey.jpg"
+            },
+            {
+              "id": "youyou-3-56",
+              "title": "Where Are My Toys?",
+              "titleCn": "我的玩具去哪了？",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_10",
+              "coverFile": "Where Are My Toys.jpg",
+              "coverImage": "/books/yy3_10/Where%20Are%20My%20Toys.jpg"
+            },
+            {
+              "id": "youyou-3-57",
+              "title": "The First Flight in Space",
+              "titleCn": "第一次太空飞行",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_10",
+              "coverFile": "The First Flight in Space.jpg",
+              "coverImage": "/books/yy3_10/The%20First%20Flight%20in%20Space.jpg"
+            },
+            {
+              "id": "youyou-3-58",
+              "title": "Freddy the Free Fish",
+              "titleCn": "自由的小鱼弗雷迪",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_10",
+              "coverFile": "Freddy the Free Fish.jpg",
+              "coverImage": "/books/yy3_10/Freddy%20the%20Free%20Fish.jpg"
+            },
+            {
+              "id": "youyou-3-59",
+              "title": "The Magic Bubble",
+              "titleCn": "魔法泡泡",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_10",
+              "coverFile": "The Magic bubble.jpg",
+              "coverImage": "/books/yy3_10/The%20Magic%20bubble.jpg"
+            },
+            {
+              "id": "youyou-3-60",
+              "title": "Jojo Writes to the King",
+              "titleCn": "乔乔给国王写信",
+              "difficulty": 1,
+              "starsReward": 1,
+              "completed": false,
+              "assetFolder": "悠游阅读成长计划3_10",
+              "coverFile": "Jojo Writes To The king.jpg",
+              "coverImage": "/books/yy3_10/Jojo%20Writes%20To%20The%20king.jpg"
+            }
+          ]
+        },
+        {
+          "seriesName": "牛津阅读树探索系列",
+          "seriesLevel": "第1级",
+          "publisher": "牛津大学出版社",
+          "focus": "启蒙阅读 + 简单词汇",
+          "batches": [],
+          "books": []
+        }
+      ]
+    },
+    {
+      "id": "forest",
+      "name": "溪流森林",
+      "level": 2,
+      "starsRequired": 10,
+      "towerUnlocked": false,
+      "icon": "🌲",
+      "bgColor": "#90EE90",
+      "description": "碧溪穿林而过，藏着更多拼读宝藏",
+      "series": []
+    },
+    {
+      "id": "canyon",
+      "name": "巨石峡谷",
+      "level": 3,
+      "starsRequired": 25,
+      "towerUnlocked": false,
+      "icon": "🪨",
+      "bgColor": "#DEB887",
+      "description": "巨大岩石构成的峡谷，句子在这里变长变难",
+      "series": []
+    },
+    {
+      "id": "volcano",
+      "name": "火山地区",
+      "level": 4,
+      "starsRequired": 45,
+      "towerUnlocked": false,
+      "icon": "🌋",
+      "bgColor": "#FF7F50",
+      "description": "熔岩奔流的地带，阅读挑战愈发炽热",
+      "series": []
+    },
+    {
+      "id": "plateau",
+      "name": "雷鸣高原",
+      "level": 5,
+      "starsRequired": 70,
+      "towerUnlocked": false,
+      "icon": "⚡",
+      "bgColor": "#DDA0DD",
+      "description": "电闪雷鸣的高原，词汇量和难度大幅提升",
+      "series": []
+    },
+    {
+      "id": "snowpeak",
+      "name": "雪山之巅",
+      "level": 6,
+      "starsRequired": 100,
+      "towerUnlocked": false,
+      "icon": "🏔️",
+      "bgColor": "#E6E6FA",
+      "description": "终年积雪的群峰，考验真正的阅读耐力",
+      "series": []
+    },
+    {
+      "id": "castle",
+      "name": "终极城堡",
+      "level": 7,
+      "starsRequired": 140,
+      "towerUnlocked": false,
+      "icon": "🏰",
+      "bgColor": "#CD5C5C",
+      "description": "王国终局之地，征服这里就是真正的阅读小达人",
+      "series": []
+    }
+  ]
+}

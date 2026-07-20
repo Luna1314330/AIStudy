@@ -15,11 +15,13 @@
 .vocab-tabs__item {
   padding: 8px 16px;
   border-radius: 999px;
+  font: inherit;
   font-size: 14px;
   font-weight: 600;
   color: var(--color-text-secondary);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
+  cursor: pointer;
 }
 
 .vocab-tabs__item--active {

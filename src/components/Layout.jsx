@@ -1,7 +1,20 @@
 import { useEffect, useState } from 'react'
-import { NavLink, Outlet, useLocation } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
+import AppNavButton from '@/components/AppNavButton'
 import { SUBJECT_NAV, CHINESE_MODULES } from '@/router'
 import './Layout.css'
+
+function isSubjectNavActive(key, pathname) {
+  if (key === 'chinese') return pathname.startsWith('/chinese')
+  return pathname.startsWith(`/${key}`)
+}
+
+function isChineseModuleActive(path, pathname) {
+  if (path === '/chinese/vocab') {
+    return pathname === path || pathname.startsWith(`${path}/`)
+  }
+  return pathname === path
+}
 
 export default function Layout() {
   const location = useLocation()
@@ -11,7 +24,6 @@ export default function Layout() {
     ? 'chinese'
     : location.pathname.split('/')[1] || ''
 
-  const currentModule = location.pathname.split('/')[2] || ''
   const showSidebar = currentSubject === 'chinese'
 
   useEffect(() => {
@@ -41,18 +53,20 @@ export default function Layout() {
         </div>
 
         <nav className="header__nav">
-          {SUBJECT_NAV.map((item) => (
-            <NavLink
-              key={item.key}
-              to={item.path}
-              className={({ isActive }) =>
-                `header__nav-item${isActive ? ' header__nav-item--active' : ''}`
-              }
-            >
-              <span className="header__nav-icon">{item.icon}</span>
-              <span className="header__nav-label">{item.label}</span>
-            </NavLink>
-          ))}
+          {SUBJECT_NAV.map((item) => {
+            const isActive = isSubjectNavActive(item.key, location.pathname)
+
+            return (
+              <AppNavButton
+                key={item.key}
+                to={item.path}
+                className={`header__nav-item${isActive ? ' header__nav-item--active' : ''}`}
+              >
+                <span className="header__nav-icon">{item.icon}</span>
+                <span className="header__nav-label">{item.label}</span>
+              </AppNavButton>
+            )
+          })}
         </nav>
 
         <button
@@ -72,23 +86,25 @@ export default function Layout() {
               <h2 className="sidebar__title">语文 · 子模块</h2>
             </div>
             <nav className="sidebar__nav">
-              {CHINESE_MODULES.map((mod) => (
-                <NavLink
-                  key={mod.key}
-                  to={mod.path}
-                  className={({ isActive }) =>
-                    [
+              {CHINESE_MODULES.map((mod) => {
+                const isActive = isChineseModuleActive(mod.path, location.pathname)
+
+                return (
+                  <AppNavButton
+                    key={mod.key}
+                    to={mod.path}
+                    className={[
                       'sidebar__item',
                       isActive ? 'sidebar__item--active' : '',
                       !mod.ready ? 'sidebar__item--pending' : '',
-                    ].join(' ')
-                  }
-                  onClick={() => setSidebarOpen(false)}
-                >
-                  <span>{mod.label}</span>
-                  {!mod.ready && <span className="sidebar__badge">待开发</span>}
-                </NavLink>
-              ))}
+                    ].join(' ')}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    <span>{mod.label}</span>
+                    {!mod.ready && <span className="sidebar__badge">待开发</span>}
+                  </AppNavButton>
+                )
+              })}
             </nav>
           </aside>
         )}

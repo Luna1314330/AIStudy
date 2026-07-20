@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run check:routes && vite",
+    "build": "npm run check:routes && vite build",
+    "check:routes": "node scripts/check-router-imports.mjs",
     "preview": "vite preview",
-    "start": "node deploy/server.mjs"
+    "start": "node deploy/server.mjs",
+    "vocab:books": "node scripts/import-garden-vocab.mjs --books",
+    "vocab:import": "node scripts/import-garden-vocab.mjs"
   },
   "dependencies": {
     "axios": "^1.7.9",
