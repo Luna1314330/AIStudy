@@ -736,7 +736,7 @@
                 {
                   "id": "youyou-3-37",
                   "title": "A Strange Noise",
-                  "titleCn": "奇怪的声音",
+                  "titleCn": "奇怪的响声",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -747,7 +747,7 @@
                 {
                   "id": "youyou-3-38",
                   "title": "Mozzy Mosquito",
-                  "titleCn": "蚊子莫兹",
+                  "titleCn": "倒霉的蚊子",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -769,7 +769,7 @@
                 {
                   "id": "youyou-3-40",
                   "title": "Vegetables Fly Away",
-                  "titleCn": "蔬菜飞走了",
+                  "titleCn": "蔬菜刮跑了",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -791,7 +791,7 @@
                 {
                   "id": "youyou-3-42",
                   "title": "Fox Brothers Want a Playground",
-                  "titleCn": "狐狸兄弟想要游乐场",
+                  "titleCn": "狐狸的游乐场",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -807,7 +807,7 @@
                 {
                   "id": "youyou-3-43",
                   "title": "Mike's Cool Bike",
-                  "titleCn": "迈克的酷自行车",
+                  "titleCn": "迈克的自行车",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -818,7 +818,7 @@
                 {
                   "id": "youyou-3-44",
                   "title": "Big Ears",
-                  "titleCn": "大耳朵",
+                  "titleCn": "大耳朵比利",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -829,7 +829,7 @@
                 {
                   "id": "youyou-3-45",
                   "title": "Rodney Runs from Lunch",
-                  "titleCn": "罗德尼逃避午餐",
+                  "titleCn": "罗德尼的午餐",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -840,7 +840,7 @@
                 {
                   "id": "youyou-3-46",
                   "title": "The King's Not Well",
-                  "titleCn": "国王生病了",
+                  "titleCn": "国王没胃口",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -851,7 +851,7 @@
                 {
                   "id": "youyou-3-47",
                   "title": "Frankie's Flying Machine",
-                  "titleCn": "弗兰基的飞行器",
+                  "titleCn": "长翅膀的猫",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -862,7 +862,7 @@
                 {
                   "id": "youyou-3-48",
                   "title": "The Perfect Mouse House",
-                  "titleCn": "完美的老鼠房子",
+                  "titleCn": "完美的家",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -933,7 +933,7 @@
                 {
                   "id": "youyou-3-54",
                   "title": "It's Time to Go",
-                  "titleCn": "该走了",
+                  "titleCn": "该出发了",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -949,7 +949,7 @@
                 {
                   "id": "youyou-3-55",
                   "title": "A Tasty Journey",
-                  "titleCn": "美味的旅程",
+                  "titleCn": "旅行中的美食",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -960,7 +960,7 @@
                 {
                   "id": "youyou-3-56",
                   "title": "Where Are My Toys?",
-                  "titleCn": "我的玩具去哪了？",
+                  "titleCn": "我的玩具呢？",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -982,7 +982,7 @@
                 {
                   "id": "youyou-3-58",
                   "title": "Freddy the Free Fish",
-                  "titleCn": "自由的小鱼弗雷迪",
+                  "titleCn": "自由的小鱼",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -1004,7 +1004,7 @@
                 {
                   "id": "youyou-3-60",
                   "title": "Jojo Writes to the King",
-                  "titleCn": "乔乔给国王写信",
+                  "titleCn": "给国王写信",
                   "difficulty": 1,
                   "starsReward": 1,
                   "completed": false,
@@ -1415,7 +1415,7 @@
             {
               "id": "youyou-3-37",
               "title": "A Strange Noise",
-              "titleCn": "奇怪的声音",
+              "titleCn": "奇怪的响声",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1426,7 +1426,7 @@
             {
               "id": "youyou-3-38",
               "title": "Mozzy Mosquito",
-              "titleCn": "蚊子莫兹",
+              "titleCn": "倒霉的蚊子",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1448,7 +1448,7 @@
             {
               "id": "youyou-3-40",
               "title": "Vegetables Fly Away",
-              "titleCn": "蔬菜飞走了",
+              "titleCn": "蔬菜刮跑了",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1470,7 +1470,7 @@
             {
               "id": "youyou-3-42",
               "title": "Fox Brothers Want a Playground",
-              "titleCn": "狐狸兄弟想要游乐场",
+              "titleCn": "狐狸的游乐场",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1481,7 +1481,7 @@
             {
               "id": "youyou-3-43",
               "title": "Mike's Cool Bike",
-              "titleCn": "迈克的酷自行车",
+              "titleCn": "迈克的自行车",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1492,7 +1492,7 @@
             {
               "id": "youyou-3-44",
               "title": "Big Ears",
-              "titleCn": "大耳朵",
+              "titleCn": "大耳朵比利",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1503,7 +1503,7 @@
             {
               "id": "youyou-3-45",
               "title": "Rodney Runs from Lunch",
-              "titleCn": "罗德尼逃避午餐",
+              "titleCn": "罗德尼的午餐",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1514,7 +1514,7 @@
             {
               "id": "youyou-3-46",
               "title": "The King's Not Well",
-              "titleCn": "国王生病了",
+              "titleCn": "国王没胃口",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1525,7 +1525,7 @@
             {
               "id": "youyou-3-47",
               "title": "Frankie's Flying Machine",
-              "titleCn": "弗兰基的飞行器",
+              "titleCn": "长翅膀的猫",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1536,7 +1536,7 @@
             {
               "id": "youyou-3-48",
               "title": "The Perfect Mouse House",
-              "titleCn": "完美的老鼠房子",
+              "titleCn": "完美的家",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1602,7 +1602,7 @@
             {
               "id": "youyou-3-54",
               "title": "It's Time to Go",
-              "titleCn": "该走了",
+              "titleCn": "该出发了",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1613,7 +1613,7 @@
             {
               "id": "youyou-3-55",
               "title": "A Tasty Journey",
-              "titleCn": "美味的旅程",
+              "titleCn": "旅行中的美食",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1624,7 +1624,7 @@
             {
               "id": "youyou-3-56",
               "title": "Where Are My Toys?",
-              "titleCn": "我的玩具去哪了？",
+              "titleCn": "我的玩具呢？",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1646,7 +1646,7 @@
             {
               "id": "youyou-3-58",
               "title": "Freddy the Free Fish",
-              "titleCn": "自由的小鱼弗雷迪",
+              "titleCn": "自由的小鱼",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,
@@ -1668,7 +1668,7 @@
             {
               "id": "youyou-3-60",
               "title": "Jojo Writes to the King",
-              "titleCn": "乔乔给国王写信",
+              "titleCn": "给国王写信",
               "difficulty": 1,
               "starsReward": 1,
               "completed": false,

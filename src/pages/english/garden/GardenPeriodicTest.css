@@ -1,0 +1,146 @@
+.garden-periodic-test {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 100%;
+  padding: 20px 24px 28px;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(134, 239, 172, 0.35), transparent 42%),
+    radial-gradient(circle at 90% 100%, rgba(110, 231, 183, 0.25), transparent 38%),
+    linear-gradient(180deg, #ecfdf5 0%, #f0fdf4 100%);
+}
+
+.garden-periodic-test--empty {
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  color: #334155;
+}
+
+.garden-periodic-test__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.garden-periodic-test__back {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.garden-periodic-test__title {
+  margin: 0 0 6px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f766e;
+}
+
+.garden-periodic-test__desc {
+  margin: 0;
+  max-width: 640px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.garden-periodic-test__books {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(20, 184, 166, 0.18);
+}
+
+.garden-periodic-test__books-label {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.garden-periodic-test__book-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.garden-periodic-test__book-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px 6px 6px;
+  border-radius: 999px;
+  background: rgba(240, 253, 250, 0.9);
+  border: 1px solid rgba(20, 184, 166, 0.16);
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.garden-periodic-test__book-list img {
+  width: 28px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.garden-periodic-test__panel {
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.garden-periodic-test__panel h3 {
+  margin: 0 0 14px;
+  font-size: 17px;
+  color: #0f766e;
+}
+
+.garden-periodic-test__result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.garden-periodic-test__result p {
+  margin: 0;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.garden-periodic-test__result--pass .garden-periodic-test__star-delta {
+  color: #0369a1;
+  font-weight: 700;
+}
+
+.garden-periodic-test__result--fail .garden-periodic-test__star-delta {
+  color: #b45309;
+  font-weight: 700;
+}
+
+.garden-periodic-test__primary {
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.garden-periodic-test__primary:hover {
+  filter: brightness(1.05);
+}

@@ -2,6 +2,8 @@ import { GARDEN_BOOK_COUNT, getBookDrawWeight, getGardenBooks } from '@/data/eng
 
 const STORAGE_KEY = 'english-garden-progress'
 export const CHALLENGE_PASS_ACCURACY = 0.8
+export const PERIODIC_TEST_BOOK_INTERVAL = 5
+export const PERIODIC_TEST_STAR_REWARD = 1
 
 function pickWeightedBook(books) {
   if (!books.length) return null
@@ -44,6 +46,7 @@ function createDefaultProgress() {
     lastDrawId: null,
     drawHistory: [],
     totalStars: 0,
+    lastPeriodicTestAtCount: 0,
   }
 }
 
@@ -71,6 +74,7 @@ function mergeProgress(raw) {
     lastDrawId: raw.lastDrawId ?? null,
     drawHistory: Array.isArray(raw.drawHistory) ? raw.drawHistory : [],
     totalStars: raw.totalStars ?? 0,
+    lastPeriodicTestAtCount: raw.lastPeriodicTestAtCount ?? 0,
   }
 }
 
@@ -90,6 +94,69 @@ export function getShrineRecord(id) {
 export function getCompletedCount() {
   const progress = loadGardenProgress()
   return Object.values(progress.shrines).filter((item) => item.completed).length
+}
+
+export function getCompletedBookIds() {
+  const progress = loadGardenProgress()
+  return getGardenBooks()
+    .filter((book) => progress.shrines[book.id]?.completed)
+    .sort((a, b) => {
+      const aAt = progress.shrines[a.id]?.completedAt ?? ''
+      const bAt = progress.shrines[b.id]?.completedAt ?? ''
+      return aAt.localeCompare(bAt)
+    })
+    .map((book) => book.id)
+}
+
+export function getPeriodicTestMilestone() {
+  const completedCount = getCompletedCount()
+  if (completedCount === 0) return 0
+  if (completedCount % PERIODIC_TEST_BOOK_INTERVAL !== 0) return 0
+  return completedCount
+}
+
+export function isPeriodicTestDue() {
+  const milestone = getPeriodicTestMilestone()
+  if (!milestone) return false
+  const progress = loadGardenProgress()
+  return (progress.lastPeriodicTestAtCount ?? 0) < milestone
+}
+
+export function getPeriodicTestBookIds() {
+  const milestone = getPeriodicTestMilestone()
+  if (!milestone) return []
+  const completedIds = getCompletedBookIds()
+  const start = milestone - PERIODIC_TEST_BOOK_INTERVAL
+  return completedIds.slice(start, milestone)
+}
+
+export function submitPeriodicTestResult({ totalWords, wrongAttempts }) {
+  const progress = loadGardenProgress()
+  const milestone = getPeriodicTestMilestone()
+  if (!milestone || !isPeriodicTestDue()) {
+    return { passed: false, accuracy: 0, accuracyPercent: 0, starDelta: 0, milestone: 0 }
+  }
+
+  const accuracy = calcChallengeAccuracy(totalWords, wrongAttempts)
+  const accuracyPercent = Math.round(accuracy * 100)
+  const passed = accuracy >= CHALLENGE_PASS_ACCURACY
+  const starDelta = passed ? PERIODIC_TEST_STAR_REWARD : -PERIODIC_TEST_STAR_REWARD
+
+  progress.totalStars = Math.max(0, (progress.totalStars ?? 0) + starDelta)
+  progress.lastPeriodicTestAtCount = milestone
+  saveGardenProgress(progress)
+
+  return { passed, accuracy, accuracyPercent, starDelta, milestone }
+}
+
+export function skipPeriodicTestNoVocab() {
+  const progress = loadGardenProgress()
+  const milestone = getPeriodicTestMilestone()
+  if (!milestone || !isPeriodicTestDue()) return false
+
+  progress.lastPeriodicTestAtCount = milestone
+  saveGardenProgress(progress)
+  return true
 }
 
 export function getTotalStars() {
@@ -210,6 +277,7 @@ export function resetCompletedShrines() {
   }
 
   progress.totalStars = 0
+  progress.lastPeriodicTestAtCount = 0
   saveGardenProgress(progress)
   return progress
 }

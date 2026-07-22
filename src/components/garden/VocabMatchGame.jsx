@@ -10,7 +10,7 @@ function shuffle(list) {
   return copy
 }
 
-export default function VocabMatchGame({ words, onFinish }) {
+export default function VocabMatchGame({ words, onFinish, intro }) {
   const cnOptions = useMemo(() => shuffle([...words]), [words])
   const [selectedEn, setSelectedEn] = useState(null)
   const [matchedEn, setMatchedEn] = useState(() => new Set())
@@ -56,8 +56,12 @@ export default function VocabMatchGame({ words, onFinish }) {
   return (
     <div className="vocab-challenge">
       <p className="vocab-challenge__intro">
-        先点一个<strong>英文</strong>，再点对应的<strong>中文</strong>。全部配对完成后，正确率需达到
-        <strong> 80%</strong> 才能点亮神庙。
+        {intro ?? (
+          <>
+            先点一个<strong>英文</strong>，再点对应的<strong>中文</strong>。全部配对完成后，正确率需达到
+            <strong> 80%</strong> 才能点亮神庙。
+          </>
+        )}
       </p>
       <div className="vocab-match">
         <div className="vocab-match__col">

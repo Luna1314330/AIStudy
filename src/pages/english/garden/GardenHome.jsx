@@ -7,9 +7,11 @@ import {
   getCompletedCount,
   getInProgressBooks,
   getTotalStars,
+  isPeriodicTestDue,
   isShrineCompleted,
   isShrineInProgress,
   loadGardenProgress,
+  PERIODIC_TEST_BOOK_INTERVAL,
   resetCompletedShrines,
 } from '@/utils/gardenStorage'
 import GardenBookCard from './GardenBookCard'
@@ -22,9 +24,11 @@ export default function GardenHome() {
   const [progressTick, setProgressTick] = useState(0)
   const [drawnBook, setDrawnBook] = useState(null)
   const [isDrawing, setIsDrawing] = useState(false)
+  const [showTestReminder, setShowTestReminder] = useState(false)
 
   const completedCount = useMemo(() => getCompletedCount(), [progressTick])
   const totalStars = useMemo(() => getTotalStars(), [progressTick])
+  const periodicTestDue = useMemo(() => isPeriodicTestDue(), [progressTick])
   const pendingCount = GARDEN_BOOK_COUNT - completedCount
   const lastDrawId = useMemo(
     () => loadGardenProgress().lastDrawId,
@@ -56,6 +60,15 @@ export default function GardenHome() {
   function handleDraw() {
     if (pendingCount === 0 || isDrawing) return
 
+    if (periodicTestDue) {
+      setShowTestReminder(true)
+      return
+    }
+
+    startDraw()
+  }
+
+  function startDraw() {
     setIsDrawing(true)
     setDrawnBook(null)
 
@@ -65,6 +78,11 @@ export default function GardenHome() {
       setIsDrawing(false)
       refreshProgress()
     }, 900)
+  }
+
+  function goToPeriodicTest() {
+    setShowTestReminder(false)
+    navigate('/english/garden/periodic-test')
   }
 
   function goToShrine(bookId) {
@@ -130,6 +148,41 @@ export default function GardenHome() {
           )}
         </div>
       </header>
+
+      {periodicTestDue && (
+        <div className="garden-home__test-banner" role="status">
+          <p>
+            你已读完 <strong>{completedCount}</strong> 本绘本，抽卡前需先完成一次复习测验（中英配对，正确率 80%
+            以上加星，未达标减星）。
+          </p>
+          <button type="button" className="garden-home__test-banner-btn" onClick={goToPeriodicTest}>
+            去复习测验
+          </button>
+        </div>
+      )}
+
+      {showTestReminder && (
+        <div className="garden-home__test-modal" role="dialog" aria-modal="true" aria-labelledby="garden-test-reminder-title">
+          <div className="garden-home__test-modal-card">
+            <h3 id="garden-test-reminder-title">先完成复习测验</h3>
+            <p>
+              每读完 {PERIODIC_TEST_BOOK_INTERVAL} 本绘本（当前 {completedCount} 本），需要先做一次复习测验，才能继续抽卡。
+            </p>
+            <div className="garden-home__test-modal-actions">
+              <button type="button" className="garden-home__test-modal-primary" onClick={goToPeriodicTest}>
+                开始测验
+              </button>
+              <button
+                type="button"
+                className="garden-home__test-modal-secondary"
+                onClick={() => setShowTestReminder(false)}
+              >
+                稍后再说
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <section className="garden-gacha">
         <div className={`garden-gacha__card${isDrawing ? ' garden-gacha__card--drawing' : ''}`}>
