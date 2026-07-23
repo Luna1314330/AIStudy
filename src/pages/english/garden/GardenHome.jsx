@@ -5,6 +5,7 @@ import {
   canEnterShrine,
   drawRandomShrine,
   getCompletedCount,
+  getChallengeCompletedCount,
   getInProgressBooks,
   getTotalStars,
   isPeriodicTestDue,
@@ -12,7 +13,6 @@ import {
   isShrineInProgress,
   loadGardenProgress,
   PERIODIC_TEST_BOOK_INTERVAL,
-  resetCompletedShrines,
 } from '@/utils/gardenStorage'
 import GardenBookCard from './GardenBookCard'
 import './GardenHome.css'
@@ -27,6 +27,7 @@ export default function GardenHome() {
   const [showTestReminder, setShowTestReminder] = useState(false)
 
   const completedCount = useMemo(() => getCompletedCount(), [progressTick])
+  const challengeCompletedCount = useMemo(() => getChallengeCompletedCount(), [progressTick])
   const totalStars = useMemo(() => getTotalStars(), [progressTick])
   const periodicTestDue = useMemo(() => isPeriodicTestDue(), [progressTick])
   const pendingCount = GARDEN_BOOK_COUNT - completedCount
@@ -90,21 +91,6 @@ export default function GardenHome() {
     navigate(`/english/garden/shrine/${bookId}`)
   }
 
-  function handleResetCompleted() {
-    if (completedCount === 0) return
-    if (
-      !window.confirm(
-        '确定清空所有已完成的神庙吗？已开启数量与星星将归零，进行中的挑战会保留。',
-      )
-    ) {
-      return
-    }
-
-    resetCompletedShrines()
-    setDrawnBook(null)
-    refreshProgress()
-  }
-
   return (
     <div className="garden-home" style={{ backgroundColor: gardenRegion?.bgColor }}>
       <header className="garden-home__header">
@@ -132,19 +118,15 @@ export default function GardenHome() {
             </strong>
           </div>
           <div className="garden-home__stats-col garden-home__stats-col--stars">
-            <span className="garden-home__stats-stars" aria-label={`${totalStars} 颗星`}>
-              <span className="garden-home__stats-star-icon" aria-hidden="true">⭐</span>
+            <span className="garden-home__stats-stars" aria-label={`${totalStars} 颗心`}>
+              <span className="garden-home__stats-heart-icon" aria-hidden="true" />
               <span className="garden-home__stats-star-count">{totalStars}</span>
             </span>
           </div>
           {completedCount > 0 && (
-            <button
-              type="button"
-              className="garden-home__reset"
-              onClick={handleResetCompleted}
-            >
-              清空已完成
-            </button>
+            <Link to="/english/garden/completed-edit" className="garden-home__edit-link">
+              编辑已开启
+            </Link>
           )}
         </div>
       </header>
@@ -152,8 +134,8 @@ export default function GardenHome() {
       {periodicTestDue && (
         <div className="garden-home__test-banner" role="status">
           <p>
-            你已读完 <strong>{completedCount}</strong> 本绘本，抽卡前需先完成一次复习测验（中英配对，正确率 80%
-            以上加星，未达标减星）。
+            你已完成 <strong>{challengeCompletedCount}</strong> 本绘本挑战，抽卡前需先完成一次复习测验（中英配对，正确率
+            80% 以上加星，未达标减星）。
           </p>
           <button type="button" className="garden-home__test-banner-btn" onClick={goToPeriodicTest}>
             去复习测验
@@ -166,7 +148,7 @@ export default function GardenHome() {
           <div className="garden-home__test-modal-card">
             <h3 id="garden-test-reminder-title">先完成复习测验</h3>
             <p>
-              每读完 {PERIODIC_TEST_BOOK_INTERVAL} 本绘本（当前 {completedCount} 本），需要先做一次复习测验，才能继续抽卡。
+              每完成 {PERIODIC_TEST_BOOK_INTERVAL} 本绘本挑战（当前 {challengeCompletedCount} 本），需要先做一次复习测验，才能继续抽卡。
             </p>
             <div className="garden-home__test-modal-actions">
               <button type="button" className="garden-home__test-modal-primary" onClick={goToPeriodicTest}>

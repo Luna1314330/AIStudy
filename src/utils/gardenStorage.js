@@ -26,13 +26,36 @@ function pickWeightedBook(books) {
 }
 
 function normalizeShrineRecord(record) {
+  const completed = Boolean(record?.completed)
+
   return {
-    completed: Boolean(record?.completed),
-    completedAt: record?.completedAt ?? null,
-    inProgress: Boolean(record?.inProgress),
+    completed,
+    completedAt: completed ? record?.completedAt ?? null : null,
+    inProgress: completed ? false : Boolean(record?.inProgress),
     lastAccuracy: typeof record?.lastAccuracy === 'number' ? record.lastAccuracy : null,
     lastAttemptAt: record?.lastAttemptAt ?? null,
   }
+}
+
+function wasShrineDrawn(id, progress = loadGardenProgress()) {
+  const key = String(id)
+  const record = normalizeShrineRecord(progress.shrines[key])
+
+  // 完成挑战必然进过神庙，而进入需先抽卡
+  if (record.completed && record.lastAttemptAt) return true
+  if (progress.lastDrawId === key) return true
+  return Boolean(progress.drawHistory?.some((entry) => entry.id === key))
+}
+
+/** 抽卡并完成挑战（配对达标）的绘本 */
+export function isShrineChallengeCompleted(id) {
+  const key = String(id)
+  const progress = loadGardenProgress()
+  const record = normalizeShrineRecord(progress.shrines[key])
+
+  if (!record.completed || !record.completedAt || record.inProgress) return false
+  if (record.lastAttemptAt == null) return false
+  return wasShrineDrawn(key, progress)
 }
 
 function createDefaultProgress() {
@@ -93,13 +116,13 @@ export function getShrineRecord(id) {
 
 export function getCompletedCount() {
   const progress = loadGardenProgress()
-  return Object.values(progress.shrines).filter((item) => item.completed).length
+  return Object.values(progress.shrines).filter((item) => normalizeShrineRecord(item).completed).length
 }
 
 export function getCompletedBookIds() {
   const progress = loadGardenProgress()
   return getGardenBooks()
-    .filter((book) => progress.shrines[book.id]?.completed)
+    .filter((book) => normalizeShrineRecord(progress.shrines[book.id]).completed)
     .sort((a, b) => {
       const aAt = progress.shrines[a.id]?.completedAt ?? ''
       const bAt = progress.shrines[b.id]?.completedAt ?? ''
@@ -108,8 +131,24 @@ export function getCompletedBookIds() {
     .map((book) => book.id)
 }
 
+export function getChallengeCompletedBookIds() {
+  const progress = loadGardenProgress()
+  return getGardenBooks()
+    .filter((book) => isShrineChallengeCompleted(book.id))
+    .sort((a, b) => {
+      const aAt = progress.shrines[a.id]?.completedAt ?? ''
+      const bAt = progress.shrines[b.id]?.completedAt ?? ''
+      return aAt.localeCompare(bAt)
+    })
+    .map((book) => book.id)
+}
+
+export function getChallengeCompletedCount() {
+  return getChallengeCompletedBookIds().length
+}
+
 export function getPeriodicTestMilestone() {
-  const completedCount = getCompletedCount()
+  const completedCount = getChallengeCompletedCount()
   if (completedCount === 0) return 0
   if (completedCount % PERIODIC_TEST_BOOK_INTERVAL !== 0) return 0
   return completedCount
@@ -125,7 +164,7 @@ export function isPeriodicTestDue() {
 export function getPeriodicTestBookIds() {
   const milestone = getPeriodicTestMilestone()
   if (!milestone) return []
-  const completedIds = getCompletedBookIds()
+  const completedIds = getChallengeCompletedBookIds()
   const start = milestone - PERIODIC_TEST_BOOK_INTERVAL
   return completedIds.slice(start, milestone)
 }
@@ -259,6 +298,75 @@ export function getInProgressBooks() {
 
 export function isShrineCompleted(id) {
   return getShrineRecord(id).completed
+}
+
+export function getCompletedBooks() {
+  const progress = loadGardenProgress()
+  return getGardenBooks()
+    .filter((book) => normalizeShrineRecord(progress.shrines[book.id]).completed)
+    .sort((a, b) => {
+      const aAt = progress.shrines[a.id]?.completedAt ?? ''
+      const bAt = progress.shrines[b.id]?.completedAt ?? ''
+      return bAt.localeCompare(aAt)
+    })
+}
+
+function getChallengeCompletedCountFromProgress(progress) {
+  return getGardenBooks().filter((book) => {
+    const key = book.id
+    const record = normalizeShrineRecord(progress.shrines[key])
+    if (!record.completed || !record.completedAt || record.inProgress) return false
+    if (record.lastAttemptAt == null) return false
+    return wasShrineDrawn(key, progress)
+  }).length
+}
+
+function syncPeriodicTestAfterRevert(progress) {
+  const count = getChallengeCompletedCountFromProgress(progress)
+  progress.lastPeriodicTestAtCount = Math.min(progress.lastPeriodicTestAtCount ?? 0, count)
+}
+
+export function revertShrineToInProgress(id) {
+  const progress = loadGardenProgress()
+  const key = String(id)
+  const book = getGardenBooks().find((item) => item.id === key)
+  const record = normalizeShrineRecord(progress.shrines[key])
+  if (!record.completed) return false
+
+  progress.shrines[key] = {
+    completed: false,
+    completedAt: null,
+    inProgress: true,
+    lastAccuracy: record.lastAccuracy,
+    lastAttemptAt: record.lastAttemptAt,
+  }
+  progress.totalStars = Math.max(0, (progress.totalStars ?? 0) - (book?.starsReward ?? 1))
+  syncPeriodicTestAfterRevert(progress)
+  saveGardenProgress(progress)
+  return true
+}
+
+export function revertShrineToLocked(id) {
+  const progress = loadGardenProgress()
+  const key = String(id)
+  const book = getGardenBooks().find((item) => item.id === key)
+  const record = normalizeShrineRecord(progress.shrines[key])
+  if (!record.completed) return false
+
+  progress.shrines[key] = {
+    completed: false,
+    completedAt: null,
+    inProgress: false,
+    lastAccuracy: null,
+    lastAttemptAt: null,
+  }
+  progress.totalStars = Math.max(0, (progress.totalStars ?? 0) - (book?.starsReward ?? 1))
+  if (progress.lastDrawId === key) {
+    progress.lastDrawId = null
+  }
+  syncPeriodicTestAfterRevert(progress)
+  saveGardenProgress(progress)
+  return true
 }
 
 /** 清空所有已完成神庙记录，星星与已开启数量归零；进行中的挑战保留 */

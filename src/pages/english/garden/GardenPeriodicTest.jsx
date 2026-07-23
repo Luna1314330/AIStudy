@@ -66,14 +66,16 @@ export default function GardenPeriodicTest() {
         <div>
           <h2 className="garden-periodic-test__title">📚 复习测验</h2>
           <p className="garden-periodic-test__desc">
-            每读完 {PERIODIC_TEST_BOOK_INTERVAL} 本绘本，抽卡前需完成一次中英配对复习。正确率 {passPercent}%
-            以上加 ⭐ 1 颗，未达标减 ⭐ 1 颗。
+            每完成 {PERIODIC_TEST_BOOK_INTERVAL} 本「抽卡且挑战通过」的绘本，抽卡前需做一次中英配对复习。正确率{' '}
+            {passPercent}% 以上加 ⭐ 1 颗，未达标减 ⭐ 1 颗。
           </p>
         </div>
       </header>
 
       <section className="garden-periodic-test__books">
-        <p className="garden-periodic-test__books-label">本次复习范围（最近 {books.length} 本）</p>
+        <p className="garden-periodic-test__books-label">
+          本次复习范围（最近 {books.length} 本已点亮绘本）
+        </p>
         <ul className="garden-periodic-test__book-list">
           {books.map((book) => (
             <li key={book.id}>
@@ -93,7 +95,7 @@ export default function GardenPeriodicTest() {
               onFinish={handleFinish}
               intro={
                 <>
-                  从最近读过的绘本中抽出的核心词。先点<strong>英文</strong>，再点对应的
+                  从最近完成挑战的绘本中抽出的核心词。先点<strong>英文</strong>，再点对应的
                   <strong>中文</strong>。全部配对完成后，正确率需达到<strong> {passPercent}%</strong> 才算合格。
                 </>
               }

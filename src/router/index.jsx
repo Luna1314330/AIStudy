@@ -31,6 +31,7 @@ import GardenHome from '@/pages/english/garden/GardenHome'
 import GardenInProgress from '@/pages/english/garden/GardenInProgress'
 import GardenShrine from '@/pages/english/garden/GardenShrine'
 import GardenPeriodicTest from '@/pages/english/garden/GardenPeriodicTest'
+import GardenCompletedEdit from '@/pages/english/garden/GardenCompletedEdit'
 import Science from '@/pages/Science'
 
 export const SUBJECT_NAV = [
@@ -101,6 +102,7 @@ export const routes = [
           { index: true, element: <EnglishHome /> },
           { path: 'garden', element: <GardenHome /> },
           { path: 'garden/in-progress', element: <GardenInProgress /> },
+          { path: 'garden/completed-edit', element: <GardenCompletedEdit /> },
           { path: 'garden/periodic-test', element: <GardenPeriodicTest /> },
           { path: 'garden/shrine/:bookId', element: <GardenShrine /> },
         ],

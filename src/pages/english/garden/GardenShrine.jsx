@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import ShrineRewardReveal from '@/components/garden/ShrineRewardReveal'
 import VocabMatchGame from '@/components/garden/VocabMatchGame'
 import VocabReadCheck from '@/components/garden/VocabReadCheck'
 import { getBookVocab, hasBookVocab } from '@/data/gardenBookVocab'
@@ -7,6 +8,7 @@ import { getGardenBook, formatBookTitleCn, getBookSeriesLabel } from '@/data/eng
 import {
   CHALLENGE_PASS_ACCURACY,
   canEnterShrine,
+  getTotalStars,
   isShrineCompleted,
   submitChallengeResult,
 } from '@/utils/gardenStorage'
@@ -23,6 +25,8 @@ export default function GardenShrine() {
   const [checkedIds, setCheckedIds] = useState(() => new Set())
   const [matchAttempt, setMatchAttempt] = useState(0)
   const [failResult, setFailResult] = useState(null)
+  const [showReveal, setShowReveal] = useState(false)
+  const [revealStarsBefore, setRevealStarsBefore] = useState(0)
 
   const canAccess = useMemo(() => {
     if (!book) return false
@@ -71,10 +75,13 @@ export default function GardenShrine() {
   }
 
   function handleMatchFinish({ totalWords, wrongAttempts }) {
+    const starsBefore = getTotalStars()
     const result = submitChallengeResult(book.id, { totalWords, wrongAttempts })
     if (result.passed) {
       setCompleted(true)
       setFailResult(null)
+      setRevealStarsBefore(starsBefore)
+      setShowReveal(true)
       setStep('done')
       return
     }
@@ -90,7 +97,14 @@ export default function GardenShrine() {
   }
 
   return (
-    <div className="garden-shrine">
+    <div className={`garden-shrine${showReveal ? ' garden-shrine--revealing' : ''}`}>
+      <ShrineRewardReveal
+        visible={showReveal}
+        starsBefore={revealStarsBefore}
+        starsGained={book.starsReward}
+        onComplete={() => setShowReveal(false)}
+      />
+
       <header className="garden-shrine__header">
         <Link to="/english/garden" className="garden-shrine__back">
           ← 返回神庙地图
@@ -107,7 +121,15 @@ export default function GardenShrine() {
           <h2>{book.title}</h2>
           <p className="garden-shrine__subtitle">{formatBookTitleCn(book.titleCn)}</p>
         </div>
-        <span className={`garden-shrine__icon${completed ? ' garden-shrine__icon--lit' : ''}`} />
+        <span
+          className={[
+            'garden-shrine__icon',
+            completed && 'garden-shrine__icon--lit',
+            showReveal && 'garden-shrine__icon--just-lit',
+          ]
+            .filter(Boolean)
+            .join(' ')}
+        />
       </div>
 
       <section className="garden-shrine__panel">
@@ -179,7 +201,7 @@ export default function GardenShrine() {
       )}
 
       {step === 'done' && (
-        <section className="garden-shrine__panel">
+        <section className={`garden-shrine__panel${showReveal ? ' garden-shrine__panel--behind-reveal' : ''}`}>
           <h3>神庙挑战</h3>
           <div className="garden-shrine__done">
             <p>🎉 挑战完成，这座神庙已点亮！获得 ⭐ {book.starsReward}</p>

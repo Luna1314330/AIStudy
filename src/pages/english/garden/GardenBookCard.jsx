@@ -32,7 +32,6 @@ export default function GardenBookCard({ book, onEnter, forceActive = false }) {
       <span className="garden-book-card__title-cn">{formatBookTitleCn(book.titleCn)}</span>
       <span className="garden-book-card__status">{STATUS_LABEL[status]}</span>
       {status === 'active' && <span className="garden-book-card__enter">继续挑战 →</span>}
-      {status === 'done' && <span className="garden-book-card__enter">复习 →</span>}
     </button>
   )
 }
